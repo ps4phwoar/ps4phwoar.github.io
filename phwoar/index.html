@@ -7,7 +7,7 @@
 <div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre><div id=CacheProgress><div id=CacheBar></div></div></div>
 <input autofocus="autofocus" type="range" id="NOUP" style="opacity:0;display:none;">
 <div id=SubTabA class=SubTabTxtAnim></div><div id=SubTabB class=SubTabLineAnim></div>
-<div id=Title class=Title>GoldHEN 2.0</div>
+<div id=Title class=Title>GoldHEN</div>
 <div id=Popup onclick="Popup.classList.remove('animation');"><div id="PopIcon"></div><div id="PopTitle"></div></div>
 <div id=BottomPopup></div>
 <div id=InfoButton><div id=R1BUTTON></div>- Show Payload Info</div>
@@ -16,7 +16,7 @@
 <div id=MainMenu class=MenuPos>
 <div  PL-Title="Old HenVR Versions" PL-Bin="SUBMENU 1"  PL-Ver=""                              PL-Desc="A collection of previously released versions of Hen with VR support." class="Box Icon2">&#xf468;</div
 ><div PL-Title="Old Hen Versions"   PL-Bin="SUBMENU 2"  PL-Ver=""                              PL-Desc="A collection of previously released versions of Hen." class="Box Icon2">&#xf4a1;</div
-><div PL-Title="GoldHEN"                PL-Bin="goldhen2.bin" PL-Ver="v2.0b - By SiSTRo" PL-Desc="Homebrew Enabler, Debug Settings, VR Support, sys_dynlib_dlsym Patch<br>Remote Package Install, Rest Mode Support, External HDD Support,<br>Official External HDD Format Support, Debug Trophies Support,<br>UART Enabler, Never Disable Screenshot, Remote Play Enabler,<br>Persistent FTP on port 2121 (Rest Mode Support), FW Update Block,<br>BinLoader Server on port 9090, CE-30391-6 Error (CMOS) Fix<br> <br><u>Changelog Since 1.1</u><br> <ul><li>Added BinLoader Server (beta version)</li><li>Added UI Menu</li><li>Improved Stability & FTP Service</li><li>Fixed Trophy Timestamps</li></ul>"  class="Box Icon"><img src="files/img/hen.svg"></div
+><div PL-Title="GoldHEN"                PL-Bin="goldhen222.bin" PL-Ver="v2.2.2 - By SiSTRo" PL-Desc="Homebrew Enabler, Debug Settings, VR Support, sys_dynlib_dlsym Patch<br>Remote Package Install, Rest Mode Support, External HDD Support,<br>Official External HDD Format Support, Debug Trophies Support,<br>UART Enabler, Never Disable Screenshot, Remote Play Enabler,<br>Persistent FTP on port 2121 (Rest Mode Support), FW Update Block,<br>BinLoader Server on port 9090, CE-30391-6 Error (CMOS) Fix,<br>Klog Server on port 3232, Integrated Cheat Menu<br> <br><u>Changelog Since 2.2.1</u><br> <ul><li>Added cheat absolute offset support</li><li>Fixed close option bug</li><li>Fixed Orbis Toolbox support bug</li></ul>" class="Box Icon"><img src="files/img/hen.svg"></div
 ><div PL-Title="Bin Loader"         PL-Bin="BINLOADER"  PL-Ver="v1.0 - By Specter"             PL-Desc="Loads a bin file sent to the PS4 IP address on port 9020.<br><br>This version of Bin Loader can also load extra large bin files up to 12.58MB in size." class="Box Icon">&#xf019;</div
 ><div PL-Title="FTP Server"         PL-Bin="FTP.bin"    PL-Ver="v1.3.2 - By LightningMods"     PL-Desc="A full access FTP server for the PS4. Connect your FTP client to the IP address that the popup message tells you. The FTP port number is 1337." class="Box Icon"><img src="files/img/ftp.svg"></div
 ><div PL-Title="Game Dumper"        PL-Bin="SUBMENU 3"  PL-Ver=""                              PL-Desc="Dump your games or apps to a USB drive to be able to create fpkg files." class="Box Icon">&#xf889;</div
@@ -27,6 +27,7 @@
 ><div PL-Title="ReactPSPlus Tools"  PL-Bin="SUBMENU 7"  PL-Ver=""                              PL-Desc="Tools to change the date and time of the internal kernel clock.<br><br>Mainly used to re-enable expired PSPlus games."  class="Box Icon">&#xf073;</div
 ><div PL-Title="Linux Loaders"      PL-Bin="SUBMENU 8"  PL-Ver=""                              PL-Desc="A collection of Linux Loaders." class="Box Icon2"><img src="files/img/linux.svg"></div
 ><div PL-Title="GTA V Mod Menus"    PL-Bin="SUBMENU 9"  PL-Ver=""                              PL-Desc="A collection of mod menus for GTA V.<br>1.27 indicates that GTA V update v1.27 must be installed." class="Box Icon2"><img src="files/img/gta.svg"></div
+><div PL-Title="RDR II Mod Menus"    PL-Bin="SUBMENU 10"  PL-Ver=""                              PL-Desc="A collection of mod menus for RDR II.<br>1.29 indicates that RDR II update v1.29 must be installed." class="Box Icon2"><img src="files/img/rdr2.png"></div
 ><div PL-Title="Credits"            PL-Bin="CREDITS"    PL-Ver=""                              PL-Desc="Credits and thanks." class="Box Icon2">&#xf30f;</div
 ></div></div>
 <div id=SubMenu1Container class=SubMenuContainer style=display:none onclick=GetInfo()>
@@ -41,7 +42,15 @@
 ></div></div>
 <div id=SubMenu2Container class=SubMenuContainer style=display:none onclick=GetInfo()>
 <div id=SubMenu2 class=SubMenuPos>
-<div  PL-Title="Hen v2.1.4" PL-Bin="Hen214.bin" PL-Ver="v2.1.4 - By The Darkprogramer"      PL-Desc="Enable Homebrew, Enable Debug Settings, Enable Update Blocker,<br>Enable External HDD Support, PSVR Support via Firmware Spoof to v9.00,<br>Remote PKG Installer Support, 7.xx External HDD Support,<br>Full Rest Mode Support, Debug Trophies Support, Enable UART,<br>Enable Blocked Screenshots, Enable Remote Play, Save Data Mounting Patches." class="Box Icon"><img src="files/img/hen.svg"><extra>v2.1.4</extra></div
+<div PL-Title="GoldHEN"                PL-Bin="goldhen221.bin" PL-Ver="v2.2.1 - By SiSTRo" PL-Desc="Homebrew Enabler, Debug Settings, VR Support, sys_dynlib_dlsym Patch<br>Remote Package Install, Rest Mode Support, External HDD Support,<br>Official External HDD Format Support, Debug Trophies Support,<br>UART Enabler, Never Disable Screenshot, Remote Play Enabler,<br>Persistent FTP on port 2121 (Rest Mode Support), FW Update Block,<br>BinLoader Server on port 9090, CE-30391-6 Error (CMOS) Fix,<br>Klog Server on port 3232, Integrated Cheat Menu<br> <br><u>Changelog Since 2.2</u><br> <ul><li>Improved Cheat Menu stability</li></ul>" class="Box Icon"><img src="files/img/hen.svg"><extra>v2.2.1</extra></div
+><div PL-Title="GoldHEN"                PL-Bin="goldhen22.bin" PL-Ver="v2.2 - By SiSTRo" PL-Desc="Homebrew Enabler, Debug Settings, VR Support, sys_dynlib_dlsym Patch<br>Remote Package Install, Rest Mode Support, External HDD Support,<br>Official External HDD Format Support, Debug Trophies Support,<br>UART Enabler, Never Disable Screenshot, Remote Play Enabler,<br>Persistent FTP on port 2121 (Rest Mode Support), FW Update Block,<br>BinLoader Server on port 9090, CE-30391-6 Error (CMOS) Fix,<br>Klog Server on port 3232, Integrated Cheat Menu<br> <br><u>Changelog Since 2.1.2</u><br> <ul><li>Added Cheat Menu initial version</li><li>Added tty redirect to klog</li></ul>" class="Box Icon"><img src="files/img/hen.svg"><extra>v2.2</extra></div
+><div PL-Title="GoldHEN"                PL-Bin="goldhen212.bin" PL-Ver="v2.1.2 - By SiSTRo" PL-Desc="Homebrew Enabler, Debug Settings, VR Support, sys_dynlib_dlsym Patch<br>Remote Package Install, Rest Mode Support, External HDD Support,<br>Official External HDD Format Support, Debug Trophies Support,<br>UART Enabler, Never Disable Screenshot, Remote Play Enabler,<br>Persistent FTP on port 2121 (Rest Mode Support), FW Update Block,<br>BinLoader Server on port 9090, CE-30391-6 Error (CMOS) Fix,<br>Klog Server on port 3232<br> <br><u>Changelog Since 2.1.1</u><br> <ul><li>Fixed config parser</li></ul>" class="Box Icon"><img src="files/img/hen.svg"><extra>v2.1.2</extra></div
+><div PL-Title="GoldHEN"                PL-Bin="goldhen211.bin" PL-Ver="v2.1.1 - By SiSTRo" PL-Desc="Homebrew Enabler, Debug Settings, VR Support, sys_dynlib_dlsym Patch<br>Remote Package Install, Rest Mode Support, External HDD Support,<br>Official External HDD Format Support, Debug Trophies Support,<br>UART Enabler, Never Disable Screenshot, Remote Play Enabler,<br>Persistent FTP on port 2121 (Rest Mode Support), FW Update Block,<br>BinLoader Server on port 9090, CE-30391-6 Error (CMOS) Fix,<br>Klog Server on port 3232<br> <br><u>Changelog Since 2.1</u><br> <ul><li>Fixed multiple injections</li></ul>" class="Box Icon"><img src="files/img/hen.svg"><extra>v2.1.1</extra></div
+><div PL-Title="GoldHEN"                PL-Bin="goldhen2b2.bin" PL-Ver="v2.1 - By SiSTRo" PL-Desc="Homebrew Enabler, Debug Settings, VR Support, sys_dynlib_dlsym Patch<br>Remote Package Install, Rest Mode Support, External HDD Support,<br>Official External HDD Format Support, Debug Trophies Support,<br>UART Enabler, Never Disable Screenshot, Remote Play Enabler,<br>Persistent FTP on port 2121 (Rest Mode Support), FW Update Block,<br>BinLoader Server on port 9090, CE-30391-6 Error (CMOS) Fix,<br>Klog Server on port 3232<br> <br><u>Changelog Since 2.0b2</u><br> <ul><li>Added config file (/data/GoldHEN/config.ini)</li><li>Added Klog server on port 3232</li><li>Improved rest mode support</li></ul>"  class="Box Icon"><img src="files/img/hen.svg"><extra>v2.1</extra></div
+><div PL-Title="GoldHEN"                PL-Bin="goldhen2b2.bin" PL-Ver="v2.0b2 - By SiSTRo" PL-Desc="Homebrew Enabler, Debug Settings, VR Support, sys_dynlib_dlsym Patch<br>Remote Package Install, Rest Mode Support, External HDD Support,<br>Official External HDD Format Support, Debug Trophies Support,<br>UART Enabler, Never Disable Screenshot, Remote Play Enabler,<br>Persistent FTP on port 2121 (Rest Mode Support), FW Update Block,<br>BinLoader Server on port 9090, CE-30391-6 Error (CMOS) Fix<br> <br><u>Changelog Since 2.0b</u><br> <ul><li>Improved BinLoader Server (still beta version)</li></ul>"  class="Box Icon"><img src="files/img/hen.svg"><extra>v2.0b2</extra></div
+><div PL-Title="GoldHEN"                PL-Bin="goldhen2.bin" PL-Ver="v2.0b - By SiSTRo" PL-Desc="Homebrew Enabler, Debug Settings, VR Support, sys_dynlib_dlsym Patch<br>Remote Package Install, Rest Mode Support, External HDD Support,<br>Official External HDD Format Support, Debug Trophies Support,<br>UART Enabler, Never Disable Screenshot, Remote Play Enabler,<br>Persistent FTP on port 2121 (Rest Mode Support), FW Update Block,<br>BinLoader Server on port 9090, CE-30391-6 Error (CMOS) Fix<br> <br><u>Changelog Since 1.1</u><br> <ul><li>Added BinLoader Server (beta version)</li><li>Added UI Menu</li><li>Improved Stability & FTP Service</li><li>Fixed Trophy Timestamps</li></ul>"  class="Box Icon"><img src="files/img/hen.svg"><extra>v2.0b</extra></div
+><div PL-Title="GoldHEN"                PL-Bin="goldhen.bin" PL-Ver="v1.1 - By SiSTRo" PL-Desc="Homebrew Enabler, Debug Settings, VR Support, sys_dynlib_dlsym Patch<br>Remote Package Install, Rest Mode Support, External HDD Support,<br>Official External HDD Format Support, Debug Trophies Support,<br>UART Enabler, Never Disable Screenshot, Remote Play Enabler,<br>Persistent FTP on port 2121 (Rest Mode Support), FW Update Block<br> <br>Changelog Since 1.0: Improved Stability & FTP Service"  class="Box Icon"><img src="files/img/hen.svg"><extra>v1.1</extra></div
+><div  PL-Title="Hen v2.1.4" PL-Bin="Hen214.bin" PL-Ver="v2.1.4 - By The Darkprogramer"      PL-Desc="Enable Homebrew, Enable Debug Settings, Enable Update Blocker,<br>Enable External HDD Support, PSVR Support via Firmware Spoof to v9.00,<br>Remote PKG Installer Support, 7.xx External HDD Support,<br>Full Rest Mode Support, Debug Trophies Support, Enable UART,<br>Enable Blocked Screenshots, Enable Remote Play, Save Data Mounting Patches." class="Box Icon"><img src="files/img/hen.svg"><extra>v2.1.4</extra></div
 ><div PL-Title="Hen v2.1.3" PL-Bin="Hen213.bin" PL-Ver="v2.1.3 - By SiSTRo"      PL-Desc="This release added Enable UART, Enable Blocked Screenshots, Enable Remote Play." class="Box Icon"><img src="files/img/hen.svg"><extra>v2.1.3</extra></div
 ><div PL-Title="Hen v2.1.2" PL-Bin="Hen212.bin" PL-Ver="v2.1.2 - By SiSTRo"      PL-Desc="This release added Debug Trophies Support for some backported games."  class="Box Icon"><img src="files/img/hen.svg"><extra>v2.1.2</extra></div
 ><div PL-Title="Hen v2.1.1"   PL-Bin="Hen211.bin"  PL-Ver="v2.1.1 - By SiSTRo"        PL-Desc="This release added 6.xx External HDD Support." class="Box Icon"><img src="files/img/hen.svg"><extra>v2.1.1</extra></div
@@ -134,6 +143,10 @@
 ><div PL-Title="NotYourDope's Menu - 1.27"    PL-Bin="gtaDope127.bin"       PL-Ver="v0.2 - By Vicodin10"      PL-Desc="Mod Menu for GTA V<br>*Game update v1.27 must be installed.<br><br>Activate Menu With: 'R1 + D-Pad Down'" class="Box Icon"><extra>1.27</extra>&#xf595;</div
 ><div PL-Title="Trainer Menu"                 PL-Bin="gtaTrainer.bin"       PL-Ver="v1.0 - By david1337hax"   PL-Desc="Mod Menu for GTA V<br><br>Activate Menu With: 'D-Pad Right + Square'" class="Box Icon">&#xf239;</div
 ></div></div>
+<div id=SubMenu10Container class=SubMenuContainer style=display:none onclick=GetInfo()>
+<div id=SubMenu10 class=SubMenuPos>
+<div  PL-Title="Havana Menu" PL-Bin="rdr2-129-505-havana.bin"      PL-Ver="v1.00 - By 0x199"   PL-Desc="A Red Dead Redemption II mod menu<br>*Game update v1.29 must be installed<br>Supported Title IDs: CUSA03041, CUSA08519<br><br>Activate Menu with: 'R1 + Square'" class="Box Icon"><img src="files/img/rdr2.png"><extra>1.29</extra></div
+></div></div>
 <div id=navFix1 tabindex="1"></div><div id=navFix2 tabindex="2"></div><div id=navFix3 tabindex="3"></div>
 <div id=Loader class=Loader></div>
 <div id=InfoBox style=display:none><div id=InfoTitle></div><div id=InfoVerAuth></div><div id=InfoDesc></div></div>
@@ -143,120 +156,615 @@
 <div id=SpoFW class=Info2></div>
 <div id=FanTemp class=Info1></div>
 <script>
-var SS=sessionStorage;var LS=localStorage;var CC=createCookie;var RC=readCookie;function createCookie(name,value,days){if(days){var date=new Date();date.setTime(date.getTime()+(days*24*60*60*1000));var expires="; expires="+date.toGMTString();}else
-expires="";document.cookie=name+"="+value+expires;}
-function readCookie(name){var nameEQ=name+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' ')
-c=c.substring(1,c.length);if(c.indexOf(nameEQ)==0)
-return c.substring(nameEQ.length,c.length);}
-return null;}
-function DLProgress(e){ScrOverlay.style.display="block";Percent=(Math.round(e.loaded/e.total*100));cacheUPDtxt.innerHTML="Installing Offline Cache: "+Percent+"%";CacheBar.style.width=Percent+'%';}
-function DisplayCacheProgress(){setTimeout(function(){cacheUPDtxt.innerHTML="Cache Installed Successfully";},1000);setTimeout(function(){ScrOverlay.style.opacity="0";LS.IsItCached="yes";},2500);setTimeout(function(){ScrOverlay.style.display="none";},3500);}
-window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};window.applicationCache.onerror=function(e){window.cacheUPDtxt.innerHTML="Error Installing Cache";};if(LS.KernEpochDiff==null){LS.KernEpochDiff=0;}
-if(LS.CurrentTemp==null){LS.CurrentTemp=79;}
-if(RC('KernEpochDiff')==null){CC('KernEpochDiff',LS.KernEpochDiff,365);}
-if(RC('CurrentTemp')==null){CC('CurrentTemp',LS.CurrentTemp,365);}
-window.onunload=function(e){CC("CurrentTemp",LS.CurrentTemp,365);CC("KernEpochDiff",LS.KernEpochDiff,365);};var UA=navigator.userAgent.substring(navigator.userAgent.indexOf("5.0 (")+19,navigator.userAgent.indexOf(") Apple"));if(LS.TrueFW==null){if(UA=="5.05"||UA=="5.07"){LS.TrueFW=(Number(UA));}else{LS.TrueFW="Spoofed";}}
-function ShowFirmwareVer(){OffFW.style.display='block';SpoFW.style.display='block';if(LS.TrueFW==null){if(UA=="5.05"||UA=="5.07"){LS.TrueFW=(Number(UA));OfficialFW=LS.TrueFW;}else{LS.TrueFW="Spoofed";OfficialFW=LS.TrueFW;}}else{OfficialFW=LS.TrueFW;}
-ReportedFW=UA;OfficialFW=LS.TrueFW;if(OfficialFW==ReportedFW){OffFW.innerHTML=("Official Firmware v"+OfficialFW+" detected");}else{OfficialFW=LS.TrueFW;OffFW.innerHTML=("Official Firmware: v"+OfficialFW);SpoFW.innerHTML=("Currently Spoofed To: v"+ReportedFW);}
-if(isNaN(ReportedFW)){OffFW.innerHTML=("NO PS4 DETECTED");}
-if(OfficialFW=="Spoofed"&&!isNaN(UA)){OffFW.innerHTML=("Incorrect Firmware Version Detected!");SpoFW.innerHTML="Please Reboot your Console!";alert("Incorrect firmware value identified!\n\nIt appears that you have deleted the cache after using a firmware spoof.\n\nTo set the correct firmware version and remove this message please reboot the console.");localStorage.removeItem("TrueFW");}}
+var SS = sessionStorage; var LS = localStorage; var CC = createCookie; var RC = readCookie;
+
+// Handle Cookies
+function createCookie(name,value,days){if(days){var date=new Date();date.setTime(date.getTime()+(days*24*60*60*1000));var expires="; expires="+date.toGMTString();}else expires="";document.cookie=name+"="+value+expires;}
+function readCookie(name){var nameEQ=name+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' ') c=c.substring(1,c.length);if(c.indexOf(nameEQ)==0) return c.substring(nameEQ.length,c.length);} return null;}
+
+// Install Offline Cache
+function DLProgress(e){ScrOverlay.style.display="block";Percent=(Math.round(e.loaded / e.total * 100));cacheUPDtxt.innerHTML="Installing Offline Cache: " + Percent + "%";CacheBar.style.width=Percent + '%';}function DisplayCacheProgress(){setTimeout(function(){cacheUPDtxt.innerHTML="Cache Installed Successfully";},1000);setTimeout(function(){ScrOverlay.style.opacity="0";LS.IsItCached="yes";},2500);setTimeout(function(){ScrOverlay.style.display="none";},3500);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};window.applicationCache.onerror=function(e){window.cacheUPDtxt.innerHTML="Error Installing Cache";};
+
+// Set Initial Cookie Setting Values
+if (LS.KernEpochDiff == null){LS.KernEpochDiff = 0;}
+if (LS.CurrentTemp == null){LS.CurrentTemp = 79;}
+if (RC('KernEpochDiff')==null){CC('KernEpochDiff',LS.KernEpochDiff,365);}
+if (RC('CurrentTemp')==null){CC('CurrentTemp',LS.CurrentTemp,365);}
+
+window.onunload=function(e){
+CC("CurrentTemp",LS.CurrentTemp,365);
+CC("KernEpochDiff",LS.KernEpochDiff,365);
+};
+
+// SET OFFICIAL Firmware Version
+var UA = navigator.userAgent.substring(navigator.userAgent.indexOf("5.0 (") + 19, navigator.userAgent.indexOf(") Apple"));if(LS.TrueFW==null){if(UA=="5.05" || UA=="5.07"){LS.TrueFW=(Number(UA));}else{LS.TrueFW="Spoofed";}}
+
+// SHOW & HIDE Firmware Version
+function ShowFirmwareVer(){OffFW.style.display = 'block';SpoFW.style.display = 'block';if(LS.TrueFW==null){if(UA=="5.05" || UA=="5.07"){LS.TrueFW=(Number(UA));OfficialFW=LS.TrueFW;}else{LS.TrueFW="Spoofed";OfficialFW=LS.TrueFW;}}else{OfficialFW=LS.TrueFW;}ReportedFW = UA;OfficialFW = LS.TrueFW;if(OfficialFW==ReportedFW){OffFW.innerHTML=("Official Firmware v"+OfficialFW+" detected");}else{OfficialFW=LS.TrueFW;OffFW.innerHTML=("Official Firmware: v"+OfficialFW);SpoFW.innerHTML=("Currently Spoofed To: v"+ReportedFW);}if(isNaN(ReportedFW)){OffFW.innerHTML=("NO PS4 DETECTED");}if(OfficialFW=="Spoofed" && !isNaN(UA)){OffFW.innerHTML=("Incorrect Firmware Version Detected!");SpoFW.innerHTML="Please Reboot your Console!";alert("Incorrect firmware value identified!\n\nIt appears that you have deleted the cache after using a firmware spoof.\n\nTo set the correct firmware version and remove this message please reboot the console.");localStorage.removeItem("TrueFW");}}
 function HideFirmwareVer(){OffFW.style.display='none';SpoFW.style.display='none';}
-function ShowTimeAndDate(){var Kdate=new Date();Kdate.setTime(Kdate.getTime()+ -LS.KernEpochDiff);Clock.style.display='block';Ktime.style.display='block';Clock.innerHTML='Current System Clock: '+Date().toString().slice(4,21);Ktime.innerHTML='Current Kernel Clock: '+Kdate.toString().slice(4,21);}
+
+// SHOW & HIDE Clocks
+function ShowTimeAndDate(){var Kdate = new Date();Kdate.setTime(Kdate.getTime() +- LS.KernEpochDiff);Clock.style.display = 'block';Ktime.style.display = 'block';Clock.innerHTML = 'Current System Clock: ' + Date().toString().slice(4,21);Ktime.innerHTML = 'Current Kernel Clock: ' + Kdate.toString().slice(4,21);}
 function HideTimeAndDate(){Clock.style.display='none';Ktime.style.display='none';}
-function ShowFanTemp(){FanTemp.style.display='block';FanTemp.innerHTML='Current Fan Control Threshold Setting: <font color="yellow">'+RC('CurrentTemp')+'&#176;</font>';}
+
+// SHOW & HIDE Fan Temp Settings
+function ShowFanTemp(){FanTemp.style.display='block';FanTemp.innerHTML= 'Current Fan Control Threshold Setting: <font color="yellow">' + RC('CurrentTemp') +'&#176;</font>';}
 function HideFanTemp(){FanTemp.style.display='none';}
-var MMc=MainMenu.childElementCount;var MMtotal=MMc;var SM1t='Old HenVR';var SM1n=1;var SM1c=SubMenu1.childElementCount;var SM1total=MMc+SM1c;var SM2t='Old Hen';var SM2n=2;var SM2c=SubMenu2.childElementCount;var SM2total=MMc+SM1c+SM2c;var SM3t='Game Dumper';var SM3n=6;var SM3c=SubMenu3.childElementCount;var SM3total=MMc+SM1c+SM2c+SM3c;var SM4t='Backup & Dump';var SM4n=8;var SM4c=SubMenu4.childElementCount;var SM4total=MMc+SM1c+SM2c+SM3c+SM4c;var SM5t='System Tools 1';var SM5n=9;var SM5c=SubMenu5.childElementCount;var SM5total=MMc+SM1c+SM2c+SM3c+SM4c+SM5c;var SM6t='System Tools 2';var SM6n=10;var SM6c=SubMenu6.childElementCount;var SM6total=MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c;var SM7t='ReactPSPlus Tools';var SM7n=11;var SM7c=SubMenu7.childElementCount;var SM7total=MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c+SM7c;var SM8t='Linux Loaders';var SM8n=12;var SM8c=SubMenu8.childElementCount;var SM8total=MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c+SM7c+SM8c;var SM9t='GTA V Mods';var SM9n=13;var SM9c=SubMenu9.childElementCount;var SM9total=MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c+SM7c+SM8c+SM9c;function GenerateSubMenuChildernCount(){SM1z=parseInt(SS.ItemNum-1-MMc);SM2z=parseInt(SS.ItemNum-1-MMc-SM1c);SM3z=parseInt(SS.ItemNum-1-MMc-SM1c-SM2c);SM4z=parseInt(SS.ItemNum-1-MMc-SM1c-SM2c-SM3c);SM5z=parseInt(SS.ItemNum-1-MMc-SM1c-SM2c-SM3c-SM4c);SM6z=parseInt(SS.ItemNum-1-MMc-SM1c-SM2c-SM3c-SM4c-SM5c);SM7z=parseInt(SS.ItemNum-1-MMc-SM1c-SM2c-SM3c-SM4c-SM5c-SM6c);SM8z=parseInt(SS.ItemNum-1-MMc-SM1c-SM2c-SM3c-SM4c-SM5c-SM6c-SM7c);SM9z=parseInt(SS.ItemNum-1-MMc-SM1c-SM2c-SM3c-SM4c-SM5c-SM6c-SM7c-SM8c);}
-if(sessionStorage.length!=0&&SS.LastPage==null){if(SS.MainMenu==1){window.MainMenu.children[SS.ItemNum-1].className="SelectedItem Icon";window.MainMenu.style.left=SS.ItemPos+'px';ChangeText(window.MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));}else if(SS.SubMenu==1){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu1ItemNum;FocusSubMenu1();UpdateMenu();}else if(SS.SubMenu==2){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu2ItemNum;FocusSubMenu2();UpdateMenu();}else if(SS.SubMenu==3){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu3ItemNum;FocusSubMenu3();UpdateMenu();}else if(SS.SubMenu==4){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu4ItemNum;FocusSubMenu4();UpdateMenu();}else if(SS.SubMenu==5){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu5ItemNum;FocusSubMenu5();UpdateMenu();}else if(SS.SubMenu==6){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu6ItemNum;FocusSubMenu6();UpdateMenu();}else if(SS.SubMenu==7){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu7ItemNum;FocusSubMenu7();UpdateMenu();}else if(SS.SubMenu==8){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu8ItemNum;FocusSubMenu8();UpdateMenu();}else if(SS.SubMenu==9){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu9ItemNum;FocusSubMenu9();UpdateMenu();}}
-if(sessionStorage.length!=0&&SS.LastPage!=null){InfoBox.style.display='block';Title.style.display='none';IBT=ChangeInfoBoxTitle;IBV=ChangeInfoBoxVer;IBD=ChangeInfoBoxDesc;if(SS.MainMenu==1){MainMenu.children[SS.ItemNum-1].opacity="1";MainMenu.children[SS.ItemNum-1].className="SelectedItem Icon";MainMenu.style.left=SS.ItemPos+'px';IBT(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));IBV(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Ver'));IBD(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Desc'));}else if(SS.SubMenu==1){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu1ItemNum;FocusSubMenu1();UpdateMenu();SubMenu1.children[SM1z].opacity="1";SubMenu1.children[SM1z].className="SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu1.children[SM1z].getAttribute('PL-Title'));IBV(SubMenu1.children[SM1z].getAttribute('PL-Ver'));IBD(SubMenu1.children[SM1z].getAttribute('PL-Desc'));}else if(SS.SubMenu==2){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu2ItemNum;FocusSubMenu2();UpdateMenu();SubMenu2.children[SM2z].opacity="1";SubMenu2.children[SM2z].className="SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu2.children[SM2z].getAttribute('PL-Title'));IBV(SubMenu2.children[SM2z].getAttribute('PL-Ver'));IBD(SubMenu2.children[SM2z].getAttribute('PL-Desc'));}else if(SS.SubMenu==3){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu3ItemNum;FocusSubMenu3();UpdateMenu();SubMenu3.children[SM3z].opacity="1";SubMenu3.children[SM3z].className="SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu3.children[SM3z].getAttribute('PL-Title'));IBV(SubMenu3.children[SM3z].getAttribute('PL-Ver'));IBD(SubMenu3.children[SM3z].getAttribute('PL-Desc'));}else if(SS.SubMenu==4){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu4ItemNum;FocusSubMenu4();UpdateMenu();SubMenu4.children[SM4z].opacity="1";SubMenu4.children[SM4z].className="SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu4.children[SM4z].getAttribute('PL-Title'));IBV(SubMenu4.children[SM4z].getAttribute('PL-Ver'));IBD(SubMenu4.children[SM4z].getAttribute('PL-Desc'));}else if(SS.SubMenu==5){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu5ItemNum;FocusSubMenu5();UpdateMenu();SubMenu5.children[SM5z].opacity="1";SubMenu5.children[SM5z].className="SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu5.children[SM5z].getAttribute('PL-Title'));IBV(SubMenu5.children[SM5z].getAttribute('PL-Ver'));IBD(SubMenu5.children[SM5z].getAttribute('PL-Desc'));}else if(SS.SubMenu==6){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu6ItemNum;FocusSubMenu6();UpdateMenu();SubMenu6.children[SM6z].opacity="1";SubMenu6.children[SM6z].className="SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu6.children[SM6z].getAttribute('PL-Title'));IBV(SubMenu6.children[SM6z].getAttribute('PL-Ver'));IBD(SubMenu6.children[SM6z].getAttribute('PL-Desc'));}else if(SS.SubMenu==7){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu7ItemNum;FocusSubMenu7();UpdateMenu();SubMenu7.children[SM7z].opacity="1";SubMenu7.children[SM7z].className="SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu7.children[SM7z].getAttribute('PL-Title'));IBV(SubMenu7.children[SM7z].getAttribute('PL-Ver'));IBD(SubMenu7.children[SM7z].getAttribute('PL-Desc'));}else if(SS.SubMenu==8){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu8ItemNum;FocusSubMenu8();UpdateMenu();SubMenu8.children[SM8z].opacity="1";SubMenu8.children[SM8z].className="SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu8.children[SM8z].getAttribute('PL-Title'));IBV(SubMenu8.children[SM8z].getAttribute('PL-Ver'));IBD(SubMenu8.children[SM8z].getAttribute('PL-Desc'));}else if(SS.SubMenu==9){SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu9ItemNum;FocusSubMenu9();UpdateMenu();SubMenu9.children[SM9z].opacity="1";SubMenu9.children[SM9z].className="SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu9.children[SM9z].getAttribute('PL-Title'));IBV(SubMenu9.children[SM9z].getAttribute('PL-Ver'));IBD(SubMenu9.children[SM9z].getAttribute('PL-Desc'));}
-var x=document.querySelectorAll(".box");var i;for(i=0;i<x.length;i++){x[i].style.opacity="0";}
-window.Loader.innerHTML='<object type="text/html" data="'+SS.LastPage+'" style="width:265px; height:56px;"></object>';}
-if(sessionStorage.length==0){SS.MainMenu=1;SS.SubMenu=0;SS.ItemNum=3;SS.ItemPos=-65;SS.SubMenu1ItemPos=325;SS.SubMenu2ItemPos=325;SS.SubMenu3ItemPos=325;SS.SubMenu4ItemPos=325;SS.SubMenu5ItemPos=325;SS.SubMenu6ItemPos=325;SS.SubMenu7ItemPos=325;SS.SubMenu8ItemPos=325;SS.SubMenu9ItemPos=325;SS.LastSubMenu1ItemNum=MMc+1;SS.LastSubMenu2ItemNum=MMc+SM1c+1;SS.LastSubMenu3ItemNum=MMc+SM1c+SM2c+1;SS.LastSubMenu4ItemNum=MMc+SM1c+SM2c+SM3c+1;SS.LastSubMenu5ItemNum=MMc+SM1c+SM2c+SM3c+SM4c+1;SS.LastSubMenu6ItemNum=MMc+SM1c+SM2c+SM3c+SM4c+SM5c+1;SS.LastSubMenu7ItemNum=MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c+1;SS.LastSubMenu8ItemNum=MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c+SM7c+1;SS.LastSubMenu9ItemNum=MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c+SM7c+SM8c+1;window.MainMenu.children[SS.ItemNum-1].className="SelectedItem Icon";}
-function UpdateMenu(){GenerateSubMenuChildernCount();if(SS.NoUpURL==null){NOUP.style.display='block';SS.NoUpURL='1';}
-SubMenu1Container.style.display='none';SubMenu2Container.style.display='none';SubMenu3Container.style.display='none';SubMenu4Container.style.display='none';SubMenu5Container.style.display='none';SubMenu6Container.style.display='none';SubMenu7Container.style.display='none';SubMenu8Container.style.display='none';SubMenu9Container.style.display='none';if(SS.ItemNum==SM1n||SS.SubMenu==1){SubMenu1Container.style.display='block';}else if(SS.ItemNum==SM2n||SS.SubMenu==2){SubMenu2Container.style.display='block';}else if(SS.ItemNum==SM3n||SS.SubMenu==3){SubMenu3Container.style.display='block';}else if(SS.ItemNum==SM4n||SS.SubMenu==4){SubMenu4Container.style.display='block';}else if(SS.ItemNum==SM5n||SS.SubMenu==5){SubMenu5Container.style.display='block';}else if(SS.ItemNum==SM6n||SS.SubMenu==6){SubMenu6Container.style.display='block';}else if(SS.ItemNum==SM7n||SS.SubMenu==7){SubMenu7Container.style.display='block';}else if(SS.ItemNum==SM8n||SS.SubMenu==8){SubMenu8Container.style.display='block';}else if(SS.ItemNum==SM9n||SS.SubMenu==9){SubMenu9Container.style.display='block';}
-setTimeout(function(){if(SS.MainMenu==1){if(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin').includes('SUBMENU')){MainMenu.children[SS.ItemNum-1].className="SelectedItem Icon2";}else{MainMenu.children[SS.ItemNum-1].className="SelectedItem Icon";}}else if(SS.SubMenu==1){SubMenu1.children[SM1z].className="SelectedItem Icon";}else if(SS.SubMenu==2){SubMenu2.children[SM2z].className="SelectedItem Icon";}else if(SS.SubMenu==3){SubMenu3.children[SM3z].className="SelectedItem Icon";}else if(SS.SubMenu==4){SubMenu4.children[SM4z].className="SelectedItem Icon";}else if(SS.SubMenu==5){SubMenu5.children[SM5z].className="SelectedItem Icon";}else if(SS.SubMenu==6){SubMenu6.children[SM6z].className="SelectedItem Icon";}else if(SS.SubMenu==7){SubMenu7.children[SM7z].className="SelectedItem Icon";}else if(SS.SubMenu==8){SubMenu8.children[SM8z].className="SelectedItem Icon";}else if(SS.SubMenu==9){SubMenu9.children[SM9z].className="SelectedItem Icon";}},0);if(SS.MainMenu==1){MainMenu.children[SS.ItemNum-1].className="SelectedItemAnim Icon";MainMenu.style.left=SS.ItemPos+'px';SS.LastMenuItemPos=SS.ItemPos;SS.LastMenuItemNum=SS.ItemNum;}else if(SS.SubMenu==1){SubMenu1.style.left=SS.SubMenu1ItemPos+'px';SS.LastSubMenu1ItemPos=SS.SubMenu1ItemPos;SS.LastSubMenu1ItemNum=SS.ItemNum;SubMenu1.children[SM1z].className="SelectedItemAnim Icon";}else if(SS.SubMenu==2){SubMenu2.style.left=SS.SubMenu2ItemPos+'px';SS.LastSubMenu2ItemPos=SS.SubMenu2ItemPos;SS.LastSubMenu2ItemNum=SS.ItemNum;SubMenu2.children[SM2z].className="SelectedItemAnim Icon";}else if(SS.SubMenu==3){SubMenu3.style.left=SS.SubMenu3ItemPos+'px';SS.LastSubMenu3ItemPos=SS.SubMenu3ItemPos;SS.LastSubMenu3ItemNum=SS.ItemNum;SubMenu3.children[SM3z].className="SelectedItemAnim Icon";}else if(SS.SubMenu==4){SubMenu4.style.left=SS.SubMenu4ItemPos+'px';SS.LastSubMenu4ItemPos=SS.SubMenu4ItemPos;SS.LastSubMenu4ItemNum=SS.ItemNum;SubMenu4.children[SM4z].className="SelectedItemAnim Icon";}else if(SS.SubMenu==5){SubMenu5.style.left=SS.SubMenu5ItemPos+'px';SS.LastSubMenu5ItemPos=SS.SubMenu5ItemPos;SS.LastSubMenu5ItemNum=SS.ItemNum;SubMenu5.children[SM5z].className="SelectedItemAnim Icon";}else if(SS.SubMenu==6){SubMenu6.style.left=SS.SubMenu6ItemPos+'px';SS.LastSubMenu6ItemPos=SS.SubMenu6ItemPos;SS.LastSubMenu6ItemNum=SS.ItemNum;SubMenu6.children[SM6z].className="SelectedItemAnim Icon";}else if(SS.SubMenu==7){SubMenu7.style.left=SS.SubMenu7ItemPos+'px';SS.LastSubMenu7ItemPos=SS.SubMenu7ItemPos;SS.LastSubMenu7ItemNum=SS.ItemNum;SubMenu7.children[SM7z].className="SelectedItemAnim Icon";}else if(SS.SubMenu==8){SubMenu8.style.left=SS.SubMenu8ItemPos+'px';SS.LastSubMenu8ItemPos=SS.SubMenu8ItemPos;SS.LastSubMenu8ItemNum=SS.ItemNum;SubMenu8.children[SM8z].className="SelectedItemAnim Icon";}else if(SS.SubMenu==9){SubMenu9.style.left=SS.SubMenu9ItemPos+'px';SS.LastSubMenu9ItemPos=SS.SubMenu9ItemPos;SS.LastSubMenu9ItemNum=SS.ItemNum;SubMenu9.children[SM9z].className="SelectedItemAnim Icon";}
-UpdateTitle();if(SS.MainMenu==1){var x=MainMenu.childElementCount;for(i=0;i<x;i++){MainMenu.children[i].className="Box Icon";}}else if(SS.SubMenu==1){var x=SubMenu1.childElementCount;for(i=0;i<x;i++){SubMenu1.children[i].className="Box Icon";}}else if(SS.SubMenu==2){var x=SubMenu2.childElementCount;for(i=0;i<x;i++){SubMenu2.children[i].className="Box Icon";}}else if(SS.SubMenu==3){var x=SubMenu3.childElementCount;for(i=0;i<x;i++){SubMenu3.children[i].className="Box Icon";}}else if(SS.SubMenu==4){var x=SubMenu4.childElementCount;for(i=0;i<x;i++){SubMenu4.children[i].className="Box Icon";}}else if(SS.SubMenu==5){var x=SubMenu5.childElementCount;for(i=0;i<x;i++){SubMenu5.children[i].className="Box Icon";}}else if(SS.SubMenu==6){var x=SubMenu6.childElementCount;for(i=0;i<x;i++){SubMenu6.children[i].className="Box Icon";}}else if(SS.SubMenu==7){var x=SubMenu7.childElementCount;for(i=0;i<x;i++){SubMenu7.children[i].className="Box Icon";}}else if(SS.SubMenu==8){var x=SubMenu8.childElementCount;for(i=0;i<x;i++){SubMenu8.children[i].className="Box Icon";}}else if(SS.SubMenu==9){var x=SubMenu9.childElementCount;for(i=0;i<x;i++){SubMenu9.children[i].className="Box Icon";}}}
-function UpdateTitle(){Title.className="TitleAnim";setTimeout(function(){if(SS.MainMenu==1){ChangeText(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));}else if(SS.SubMenu==1){ChangeText(SubMenu1.children[SM1z].getAttribute('PL-Title'));}else if(SS.SubMenu==2){ChangeText(SubMenu2.children[SM2z].getAttribute('PL-Title'));}else if(SS.SubMenu==3){ChangeText(SubMenu3.children[SM3z].getAttribute('PL-Title'));}else if(SS.SubMenu==4){ChangeText(SubMenu4.children[SM4z].getAttribute('PL-Title'));}else if(SS.SubMenu==5){ChangeText(SubMenu5.children[SM5z].getAttribute('PL-Title'));}else if(SS.SubMenu==6){ChangeText(SubMenu6.children[SM6z].getAttribute('PL-Title'));}else if(SS.SubMenu==7){ChangeText(SubMenu7.children[SM7z].getAttribute('PL-Title'));}else if(SS.SubMenu==8){ChangeText(SubMenu8.children[SM8z].getAttribute('PL-Title'));}else if(SS.SubMenu==9){ChangeText(SubMenu9.children[SM9z].getAttribute('PL-Title'));}},100);setTimeout(function(){Title.className="Title";},100);}
-function FocusSubMenu1(){MenuContainer.className="HideMenuContainer";SubMenu1Container.className="MoveSubMenuContainer";SubMenu1.style.left=SS.LastSubMenu1ItemPos;SubTabA.className="SubTabTxt";SubTabB.className="SubTabLine";SubTabA.innerHTML=SM1t;}
-function FocusSubMenu2(){MenuContainer.className="HideMenuContainer";SubMenu2Container.className="MoveSubMenuContainer";SubMenu2.style.left=SS.LastSubMenu2ItemPos;SubTabA.className="SubTabTxt";SubTabB.className="SubTabLine";SubTabA.innerHTML=SM2t;}
-function FocusSubMenu3(){MenuContainer.className="HideMenuContainer";SubMenu3Container.className="MoveSubMenuContainer";SubMenu3.style.left=SS.LastSubMenu3ItemPos;SubTabA.className="SubTabTxt";SubTabB.className="SubTabLine";SubTabA.innerHTML=SM3t;}
-function FocusSubMenu4(){MenuContainer.className="HideMenuContainer";SubMenu4Container.className="MoveSubMenuContainer";SubMenu4.style.left=SS.LastSubMenu4ItemPos;SubTabA.className="SubTabTxt";SubTabB.className="SubTabLine";SubTabA.innerHTML=SM4t;}
-function FocusSubMenu5(){MenuContainer.className="HideMenuContainer";SubMenu5Container.className="MoveSubMenuContainer";SubMenu5.style.left=SS.LastSubMenu5ItemPos;SubTabA.className="SubTabTxt";SubTabB.className="SubTabLine";SubTabA.innerHTML=SM5t;}
-function FocusSubMenu6(){MenuContainer.className="HideMenuContainer";SubMenu6Container.className="MoveSubMenuContainer";SubMenu6.style.left=SS.LastSubMenu6ItemPos;SubTabA.className="SubTabTxt";SubTabB.className="SubTabLine";SubTabA.innerHTML=SM6t;}
-function FocusSubMenu7(){MenuContainer.className="HideMenuContainer";SubMenu7Container.className="MoveSubMenuContainer";SubMenu7.style.left=SS.LastSubMenu7ItemPos;SubTabA.className="SubTabTxt";SubTabB.className="SubTabLine";SubTabA.innerHTML=SM7t;}
-function FocusSubMenu8(){MenuContainer.className="HideMenuContainer";SubMenu8Container.className="MoveSubMenuContainer";SubMenu8.style.left=SS.LastSubMenu8ItemPos;SubTabA.className="SubTabTxt";SubTabB.className="SubTabLine";SubTabA.innerHTML=SM8t;}
-function FocusSubMenu9(){MenuContainer.className="HideMenuContainer";SubMenu9Container.className="MoveSubMenuContainer";SubMenu9.style.left=SS.LastSubMenu9ItemPos;SubTabA.className="SubTabTxt";SubTabB.className="SubTabLine";SubTabA.innerHTML=SM9t;}
-function UpdateSubMenu(){setTimeout(function(){GenerateSubMenuChildernCount();if(SS.SubMenu==1){SubMenu1.children[SM1z].className="SelectedItem2 Icon";}else if(SS.SubMenu==2){SubMenu2.children[SM2z].className="SelectedItem2 Icon";}else if(SS.SubMenu==3){SubMenu3.children[SM3z].className="SelectedItem2 Icon";}else if(SS.SubMenu==4){SubMenu4.children[SM4z].className="SelectedItem2 Icon";}else if(SS.SubMenu==5){SubMenu5.children[SM5z].className="SelectedItem2 Icon";}else if(SS.SubMenu==6){SubMenu6.children[SM6z].className="SelectedItem2 Icon";}else if(SS.SubMenu==7){SubMenu7.children[SM7z].className="SelectedItem2 Icon";}else if(SS.SubMenu==8){SubMenu8.children[SM8z].className="SelectedItem2 Icon";}else if(SS.SubMenu==9){SubMenu9.children[SM9z].className="SelectedItem2 Icon";}
-UpdateTitle();},0);}
-function UNFocusSubMenu(){if(SS.SubMenu==1){SubMenu1.children[SM1z].className="Box2 Icon";SubMenu1Container.className="SubMenuContainer";SS.ItemNum=SM1n;}else if(SS.SubMenu==2){SubMenu2.children[SM2z].className="Box2 Icon";SubMenu2Container.className="SubMenuContainer";SS.ItemNum=SM2n;}else if(SS.SubMenu==3){SubMenu3.children[SM3z].className="Box2 Icon";SubMenu3Container.className="SubMenuContainer";SS.ItemNum=SM3n;}else if(SS.SubMenu==4){SubMenu4.children[SM4z].className="Box2 Icon";SubMenu4Container.className="SubMenuContainer";SS.ItemNum=SM4n;}else if(SS.SubMenu==5){SubMenu5.children[SM5z].className="Box2 Icon";SubMenu5Container.className="SubMenuContainer";SS.ItemNum=SM5n;}else if(SS.SubMenu==6){SubMenu6.children[SM6z].className="Box2 Icon";SubMenu6Container.className="SubMenuContainer";SS.ItemNum=SM6n;}else if(SS.SubMenu==7){SubMenu7.children[SM7z].className="Box2 Icon";SubMenu7Container.className="SubMenuContainer";SS.ItemNum=SM7n;}else if(SS.SubMenu==8){SubMenu8.children[SM8z].className="Box2 Icon";SubMenu8Container.className="SubMenuContainer";SS.ItemNum=SM8n;}else if(SS.SubMenu==9){SubMenu9.children[SM9z].className="Box2 Icon";SubMenu9Container.className="SubMenuContainer";SS.ItemNum=SM9n;}
-MenuContainer.className="MenuContainer2";SubTabA.className="SubTabTxtAnim";SubTabB.className="SubTabLineAnim";SS.SubMenu=0;if(SS.MainMenu==1){ChangeText(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));}else if(SS.SubMenu==1){ChangeText(SubMenu1.children[SM1z].getAttribute('PL-Title'));}else if(SS.SubMenu==2){ChangeText(SubMenu2.children[SM2z].getAttribute('PL-Title'));}else if(SS.SubMenu==3){ChangeText(SubMenu3.children[SM3z].getAttribute('PL-Title'));}else if(SS.SubMenu==4){ChangeText(SubMenu4.children[SM4z].getAttribute('PL-Title'));}else if(SS.SubMenu==5){ChangeText(SubMenu5.children[SM5z].getAttribute('PL-Title'));}else if(SS.SubMenu==6){ChangeText(SubMenu6.children[SM6z].getAttribute('PL-Title'));}else if(SS.SubMenu==7){ChangeText(SubMenu7.children[SM7z].getAttribute('PL-Title'));}else if(SS.SubMenu==8){ChangeText(SubMenu8.children[SM8z].getAttribute('PL-Title'));}else if(SS.SubMenu==9){ChangeText(SubMenu9.children[SM9z].getAttribute('PL-Title'));}}
-function LoadPayload(){Loader.innerHTML='<object type="text/html" data="files/exploit.html" style="width:265px; height:56px;"></object>';}
-function loadPage(){SS.LastPage='files/exploit.html';if(Title.innerHTML=='Hen'){SS.ThisIsHen='1';SS.Payload = MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin');LoadPayload();}else if(Title.innerHTML=='Bin Loader'){SS.ThisIsBinLoader='1';LoadPayload();}else if(Title.innerHTML=='Mira'){SS.ThisIsMira='1';SS.Payload='Mira.bin';LoadPayload();}else if(Title.innerHTML=='Orbis AFR'){SS.ThisIsOrbisAFR='1';SS.bin1="Mira.bin";SS.bin2="OrbisAFR.bin";LoadPayload();}else if(Title.innerHTML=='Save Mounter + FTP'){SS.ThisIsSaveMounter='1';SS.bin1="SaveMounter.bin";SS.bin2="FTP.bin";LoadPayload();}else if(Title.innerHTML=='Fan Control'){SS.ThisIsFanControl='1';SS.LastPage='files/FanControlLoader.html';Loader.innerHTML='<object type="text/html" data="files/FanControlLoader.html" style="width:265px; height:56px;"></object>';}else if(Title.innerHTML=='Firmware Spoofer'){ShowFirmwareVer();SS.ThisIsFwSpoofer='1';SS.LastPage='files/FwSpooferLoader.html';Loader.innerHTML='<object type="text/html" data="files/FwSpooferLoader.html" style="width:265px; height:56px;"></object>';}else if(Title.innerHTML=='ReactPSPlus'){SS.ThisIsReact='1';SS.Payload='ReactPSPlus.bin';SS.LastPage='files/ReactPSPlus.html';Loader.innerHTML='<object type="text/html" data="files/ReactPSPlus.html" style="width:265px; height:56px;"></object>';}else if(Title.innerHTML=='ReactPSPlus-UNDO'){SS.ThisIsReactUNDO='1';SS.LastPage='files/ReactPSPlus_UNDO.html';Loader.innerHTML='<object type="text/html" data="files/ReactPSPlus_UNDO.html" style="width:265px; height:56px;"></object>';}else if(Title.innerHTML=='ReactPSPlus-MOD'){SS.ThisIsReactMOD='1';SS.LastPage='files/ReactPSPlus_MODLoader.html';Loader.innerHTML='<object type="text/html" data="files/ReactPSPlus_MODLoader.html" style="width:265px; height:56px;"></object>';}else if(Title.innerHTML=='Credits'){SS.ThisIsCredits='1';SS.LastPage='files/Credits.html';ScrOverlay.style.opacity="1";ScrOverlay.style.display="block";ScrOverlay.innerHTML='<object type="text/html" data="files/Credits.html" style="width:100%; height:100%;"></object>';}
-else if(SS.MainMenu==1&&MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin').includes('SUBMENU')){}
-else if(SS.MainMenu==1){SS.Payload=MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin');LoadPayload();}
-else if(SS.SubMenu==1){SS.Payload=SubMenu1.children[SM1z].getAttribute('PL-Bin');LoadPayload();}else if(SS.SubMenu==2){SS.Payload=SubMenu2.children[SM2z].getAttribute('PL-Bin');LoadPayload();}else if(SS.SubMenu==3){SS.Payload=SubMenu3.children[SM3z].getAttribute('PL-Bin');LoadPayload();}else if(SS.SubMenu==4){SS.Payload=SubMenu4.children[SM4z].getAttribute('PL-Bin');LoadPayload();}else if(SS.SubMenu==5){SS.Payload=SubMenu5.children[SM5z].getAttribute('PL-Bin');LoadPayload();}else if(SS.SubMenu==6){SS.Payload=SubMenu6.children[SM6z].getAttribute('PL-Bin');LoadPayload();}else if(SS.SubMenu==7){SS.Payload=SubMenu7.children[SM7z].getAttribute('PL-Bin');LoadPayload();}else if(SS.SubMenu==8){SS.Payload=SubMenu8.children[SM8z].getAttribute('PL-Bin');LoadPayload();}else if(SS.SubMenu==9){SS.Payload=SubMenu9.children[SM9z].getAttribute('PL-Bin');LoadPayload();}}
-function loadPage2(){if(SS.ThisIsFanControl=='2'){window.setTEMP();}else if(SS.ThisIsFwSpoofer=='2'){window.setFW();}}
-function ChangeText(text){Title.innerHTML=text;}
-function ChangeInfoBoxTitle(text){InfoTitle.innerHTML=text;}
-function ChangeInfoBoxVer(text){InfoVerAuth.innerHTML=text;}
-function ChangeInfoBoxDesc(text){InfoDesc.innerHTML=text;}
-IBT=ChangeInfoBoxTitle;IBV=ChangeInfoBoxVer;IBD=ChangeInfoBoxDesc;function pop(){Popup.classList.remove('animation');void Popup.offsetWidth;Popup.classList.add('animation');}
+
+// Declare Some Menu Variables
+var MMc =  MainMenu.childElementCount;        // Main Menu Item Count
+var MMtotal = MMc;                            // Main Menu Total Item Count For Navigation
+
+var SM1t = 'Old HenVR';                       // Sub Menu 1 Title
+var SM1n = 1;                                 // Sub Menu 1 Item Number
+var SM1c = SubMenu1.childElementCount;        // Sub Menu 1 Item Count
+var SM1total = MMc+SM1c;                      // Sub Menu 1 Total Item Count For Navigation
+
+var SM2t = 'Old Hen';                         // Sub Menu 2 Title
+var SM2n = 2;                                 // Sub Menu 2 Item Number
+var SM2c = SubMenu2.childElementCount;        // Sub Menu 2 Item Count
+var SM2total = MMc+SM1c+SM2c;                 // Sub Menu 2 Total Item Count For Navigation
+
+var SM3t = 'Game Dumper';                     // Sub Menu 3 Title
+var SM3n = 6;                                 // Sub Menu 3 Item Number
+var SM3c = SubMenu3.childElementCount;        // Sub Menu 3 Item Count
+var SM3total = MMc+SM1c+SM2c+SM3c;            // Sub Menu 3 Total Item Count For Navigation
+
+var SM4t = 'Backup & Dump';                   // Sub Menu 4 Title
+var SM4n = 8;                                 // Sub Menu 4 Item Number
+var SM4c = SubMenu4.childElementCount;        // Sub Menu 4 Item Count
+var SM4total = MMc+SM1c+SM2c+SM3c+SM4c;       // Sub Menu 4 Total Item Count For Navigation
+
+var SM5t = 'System Tools 1';                  // Sub Menu 5 Title
+var SM5n = 9;                                 // Sub Menu 5 Item Number
+var SM5c = SubMenu5.childElementCount;        // Sub Menu 5 Item Count
+var SM5total = MMc+SM1c+SM2c+SM3c+SM4c+SM5c;  // Sub Menu 5 Total Item Count For Navigation
+
+var SM6t = 'System Tools 2';                       // Sub Menu 6 Title
+var SM6n = 10;                                     // Sub Menu 6 Item Number
+var SM6c = SubMenu6.childElementCount;             // Sub Menu 6 Item Count
+var SM6total = MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c;  // Sub Menu 6 Total Item Count For Navigation
+
+var SM7t = 'ReactPSPlus Tools';                         // Sub Menu 7 Title
+var SM7n = 11;                                          // Sub Menu 7 Item Number
+var SM7c = SubMenu7.childElementCount;                  // Sub Menu 7 Item Count
+var SM7total = MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c+SM7c;  // Sub Menu 7 Total Item Count For Navigation
+
+var SM8t = 'Linux Loaders';                                  // Sub Menu 8 Title
+var SM8n = 12;                                               // Sub Menu 8 Item Number
+var SM8c = SubMenu8.childElementCount;                       // Sub Menu 8 Item Count
+var SM8total = MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c+SM7c+SM8c;  // Sub Menu 8 Total Item Count For Navigation
+
+var SM9t = 'GTA V Mods';                                          // Sub Menu 9 Title
+var SM9n = 13;                                                    // Sub Menu 9 Item Number
+var SM9c = SubMenu9.childElementCount;                            // Sub Menu 9 Item Count
+var SM9total = MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c+SM7c+SM8c+SM9c;  // Sub Menu 8 Total Item Count For Navigation
+
+var SM10t = 'RDR II Mods';                                          // Sub Menu 10 Title
+var SM10n = 14;                                                    // Sub Menu 10 Item Number
+var SM10c = SubMenu10.childElementCount;                            // Sub Menu 10 Item Count
+var SM10total = MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c+SM7c+SM8c+SM9c+SM10;  // Sub Menu 9 Total Item Count For Navigation
+
+// Generate SubMenu Children Count
+function GenerateSubMenuChildernCount(){
+SM1z = parseInt(SS.ItemNum-1-MMc);
+SM2z = parseInt(SS.ItemNum-1-MMc-SM1c);
+SM3z = parseInt(SS.ItemNum-1-MMc-SM1c-SM2c);
+SM4z = parseInt(SS.ItemNum-1-MMc-SM1c-SM2c-SM3c);
+SM5z = parseInt(SS.ItemNum-1-MMc-SM1c-SM2c-SM3c-SM4c);
+SM6z = parseInt(SS.ItemNum-1-MMc-SM1c-SM2c-SM3c-SM4c-SM5c);
+SM7z = parseInt(SS.ItemNum-1-MMc-SM1c-SM2c-SM3c-SM4c-SM5c-SM6c);
+SM8z = parseInt(SS.ItemNum-1-MMc-SM1c-SM2c-SM3c-SM4c-SM5c-SM6c-SM7c);
+SM9z = parseInt(SS.ItemNum-1-MMc-SM1c-SM2c-SM3c-SM4c-SM5c-SM6c-SM7c-SM8c);
+SM10z = parseInt(SS.ItemNum-1-MMc-SM1c-SM2c-SM3c-SM4c-SM5c-SM6c-SM7c-SM8c-SM9c);
+}
+
+// Move To Last Item After Page Refresh
+if (sessionStorage.length != 0 && SS.LastPage == null) {
+     if (SS.MainMenu == 1){window.MainMenu.children[SS.ItemNum-1].className = "SelectedItem Icon";window.MainMenu.style.left = SS.ItemPos+'px';ChangeText(window.MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));}
+else if (SS.SubMenu == 1){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu1ItemNum;FocusSubMenu1();UpdateMenu();}
+else if (SS.SubMenu == 2){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu2ItemNum;FocusSubMenu2();UpdateMenu();}
+else if (SS.SubMenu == 3){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu3ItemNum;FocusSubMenu3();UpdateMenu();}
+else if (SS.SubMenu == 4){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu4ItemNum;FocusSubMenu4();UpdateMenu();}
+else if (SS.SubMenu == 5){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu5ItemNum;FocusSubMenu5();UpdateMenu();}
+else if (SS.SubMenu == 6){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu6ItemNum;FocusSubMenu6();UpdateMenu();}
+else if (SS.SubMenu == 7){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu7ItemNum;FocusSubMenu7();UpdateMenu();}
+else if (SS.SubMenu == 8){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu8ItemNum;FocusSubMenu8();UpdateMenu();}
+else if (SS.SubMenu == 9){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu9ItemNum;FocusSubMenu9();UpdateMenu();}
+else if (SS.SubMenu == 10){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu10ItemNum;FocusSubMenu10();UpdateMenu();}
+}
+
+// Move To And Reload Last Item After Memory Error
+if (sessionStorage.length != 0 && SS.LastPage != null) {
+InfoBox.style.display='block'; Title.style.display='none';IBT = ChangeInfoBoxTitle;IBV = ChangeInfoBoxVer;IBD = ChangeInfoBoxDesc;
+     if (SS.MainMenu == 1){MainMenu.children[SS.ItemNum-1].opacity="1";MainMenu.children[SS.ItemNum-1].className = "SelectedItem Icon";MainMenu.style.left = SS.ItemPos+'px';IBT(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));IBV(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Ver'));IBD(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 1){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu1ItemNum;FocusSubMenu1();UpdateMenu();SubMenu1.children[SM1z].opacity="1";SubMenu1.children[SM1z].className = "SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu1.children[SM1z].getAttribute('PL-Title'));IBV(SubMenu1.children[SM1z].getAttribute('PL-Ver'));IBD(SubMenu1.children[SM1z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 2){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu2ItemNum;FocusSubMenu2();UpdateMenu();SubMenu2.children[SM2z].opacity="1";SubMenu2.children[SM2z].className = "SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu2.children[SM2z].getAttribute('PL-Title'));IBV(SubMenu2.children[SM2z].getAttribute('PL-Ver'));IBD(SubMenu2.children[SM2z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 3){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu3ItemNum;FocusSubMenu3();UpdateMenu();SubMenu3.children[SM3z].opacity="1";SubMenu3.children[SM3z].className = "SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu3.children[SM3z].getAttribute('PL-Title'));IBV(SubMenu3.children[SM3z].getAttribute('PL-Ver'));IBD(SubMenu3.children[SM3z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 4){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu4ItemNum;FocusSubMenu4();UpdateMenu();SubMenu4.children[SM4z].opacity="1";SubMenu4.children[SM4z].className = "SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu4.children[SM4z].getAttribute('PL-Title'));IBV(SubMenu4.children[SM4z].getAttribute('PL-Ver'));IBD(SubMenu4.children[SM4z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 5){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu5ItemNum;FocusSubMenu5();UpdateMenu();SubMenu5.children[SM5z].opacity="1";SubMenu5.children[SM5z].className = "SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu5.children[SM5z].getAttribute('PL-Title'));IBV(SubMenu5.children[SM5z].getAttribute('PL-Ver'));IBD(SubMenu5.children[SM5z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 6){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu6ItemNum;FocusSubMenu6();UpdateMenu();SubMenu6.children[SM6z].opacity="1";SubMenu6.children[SM6z].className = "SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu6.children[SM6z].getAttribute('PL-Title'));IBV(SubMenu6.children[SM6z].getAttribute('PL-Ver'));IBD(SubMenu6.children[SM6z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 7){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu7ItemNum;FocusSubMenu7();UpdateMenu();SubMenu7.children[SM7z].opacity="1";SubMenu7.children[SM7z].className = "SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu7.children[SM7z].getAttribute('PL-Title'));IBV(SubMenu7.children[SM7z].getAttribute('PL-Ver'));IBD(SubMenu7.children[SM7z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 8){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu8ItemNum;FocusSubMenu8();UpdateMenu();SubMenu8.children[SM8z].opacity="1";SubMenu8.children[SM8z].className = "SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu8.children[SM8z].getAttribute('PL-Title'));IBV(SubMenu8.children[SM8z].getAttribute('PL-Ver'));IBD(SubMenu8.children[SM8z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 9){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu9ItemNum;FocusSubMenu9();UpdateMenu();SubMenu9.children[SM9z].opacity="1";SubMenu9.children[SM9z].className = "SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu9.children[SM9z].getAttribute('PL-Title'));IBV(SubMenu9.children[SM9z].getAttribute('PL-Ver'));IBD(SubMenu9.children[SM9z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 10){SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu10ItemNum;FocusSubMenu10();UpdateMenu();SubMenu10.children[SM10z].opacity="1";SubMenu10.children[SM10z].className = "SelectedItem Icon";SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu10.children[SM10z].getAttribute('PL-Title'));IBV(SubMenu10.children[SM10z].getAttribute('PL-Ver'));IBD(SubMenu10.children[SM10z].getAttribute('PL-Desc'));}
+var x = document.querySelectorAll(".box"); var i; for(i = 0; i < x.length; i++){x[i].style.opacity="0";}
+window.Loader.innerHTML='<object type="text/html" data="'+SS.LastPage+'" style="width:265px; height:56px;"></object>';
+}
+
+// Set Initial sessionStorage Values
+if (sessionStorage.length == 0) {
+SS.MainMenu = 1;  // Main Menu Initially ON
+SS.SubMenu = 0;   // Sub Menus Initially OFF
+SS.ItemNum = 3;   // Starting Item Number
+SS.ItemPos = -65; // Starting X Position
+SS.SubMenu1ItemPos = 325; 
+SS.SubMenu2ItemPos = 325; 
+SS.SubMenu3ItemPos = 325;
+SS.SubMenu4ItemPos = 325;
+SS.SubMenu5ItemPos = 325;
+SS.SubMenu6ItemPos = 325;
+SS.SubMenu7ItemPos = 325;
+SS.SubMenu8ItemPos = 325;
+SS.SubMenu9ItemPos = 325;
+SS.SubMenu10ItemPos = 325;
+SS.LastSubMenu1ItemNum = MMc+1;
+SS.LastSubMenu2ItemNum = MMc+SM1c+1;
+SS.LastSubMenu3ItemNum = MMc+SM1c+SM2c+1;
+SS.LastSubMenu4ItemNum = MMc+SM1c+SM2c+SM3c+1;
+SS.LastSubMenu5ItemNum = MMc+SM1c+SM2c+SM3c+SM4c+1;
+SS.LastSubMenu6ItemNum = MMc+SM1c+SM2c+SM3c+SM4c+SM5c+1;
+SS.LastSubMenu7ItemNum = MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c+1;
+SS.LastSubMenu8ItemNum = MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c+SM7c+1;
+SS.LastSubMenu9ItemNum = MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c+SM7c+SM8c+1;
+SS.LastSubMenu10ItemNum = MMc+SM1c+SM2c+SM3c+SM4c+SM5c+SM6c+SM7c+SM8c+SM9c+1;
+window.MainMenu.children[SS.ItemNum-1].className = "SelectedItem Icon";
+}
+
+//UpdateMenu function Begins!!!!/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function UpdateMenu(){
+GenerateSubMenuChildernCount();
+if (SS.NoUpURL == null){NOUP.style.display='block';SS.NoUpURL='1';}
+
+// Display Sub Menu
+SubMenu1Container.style.display = 'none';
+SubMenu2Container.style.display = 'none';
+SubMenu3Container.style.display = 'none';
+SubMenu4Container.style.display = 'none';
+SubMenu5Container.style.display = 'none';
+SubMenu6Container.style.display = 'none';
+SubMenu7Container.style.display = 'none';
+SubMenu8Container.style.display = 'none';
+SubMenu9Container.style.display = 'none';
+SubMenu10Container.style.display = 'none';
+     if (SS.ItemNum == SM1n || SS.SubMenu == 1){SubMenu1Container.style.display = 'block';}
+else if (SS.ItemNum == SM2n || SS.SubMenu == 2){SubMenu2Container.style.display = 'block';}
+else if (SS.ItemNum == SM3n || SS.SubMenu == 3){SubMenu3Container.style.display = 'block';}
+else if (SS.ItemNum == SM4n || SS.SubMenu == 4){SubMenu4Container.style.display = 'block';}
+else if (SS.ItemNum == SM5n || SS.SubMenu == 5){SubMenu5Container.style.display = 'block';}
+else if (SS.ItemNum == SM6n || SS.SubMenu == 6){SubMenu6Container.style.display = 'block';}
+else if (SS.ItemNum == SM7n || SS.SubMenu == 7){SubMenu7Container.style.display = 'block';}
+else if (SS.ItemNum == SM8n || SS.SubMenu == 8){SubMenu8Container.style.display = 'block';}
+else if (SS.ItemNum == SM9n || SS.SubMenu == 9){SubMenu9Container.style.display = 'block';}
+else if (SS.ItemNum == SM10n || SS.SubMenu == 10){SubMenu10Container.style.display = 'block';}
+
+// Update selected Item To Big Selected Item Size
+setTimeout(function(){
+if (SS.MainMenu == 1){
+   if (MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin').includes('SUBMENU')){MainMenu.children[SS.ItemNum-1].className = "SelectedItem Icon2";}
+ else {MainMenu.children[SS.ItemNum-1].className = "SelectedItem Icon";}
+}
+else if (SS.SubMenu == 1){SubMenu1.children[SM1z].className = "SelectedItem Icon";}
+else if (SS.SubMenu == 2){SubMenu2.children[SM2z].className = "SelectedItem Icon";}
+else if (SS.SubMenu == 3){SubMenu3.children[SM3z].className = "SelectedItem Icon";}
+else if (SS.SubMenu == 4){SubMenu4.children[SM4z].className = "SelectedItem Icon";}
+else if (SS.SubMenu == 5){SubMenu5.children[SM5z].className = "SelectedItem Icon";}
+else if (SS.SubMenu == 6){SubMenu6.children[SM6z].className = "SelectedItem Icon";}
+else if (SS.SubMenu == 7){SubMenu7.children[SM7z].className = "SelectedItem Icon";}
+else if (SS.SubMenu == 8){SubMenu8.children[SM8z].className = "SelectedItem Icon";}
+else if (SS.SubMenu == 9){SubMenu9.children[SM9z].className = "SelectedItem Icon";}
+else if (SS.SubMenu == 10){SubMenu10.children[SM10z].className = "SelectedItem Icon";}
+},0);
+
+// Update Position of Menu
+     if (SS.MainMenu == 1){MainMenu.children[SS.ItemNum-1].className = "SelectedItemAnim Icon";MainMenu.style.left = SS.ItemPos+'px';SS.LastMenuItemPos = SS.ItemPos;SS.LastMenuItemNum = SS.ItemNum;}
+else if (SS.SubMenu == 1){SubMenu1.style.left = SS.SubMenu1ItemPos+'px';SS.LastSubMenu1ItemPos = SS.SubMenu1ItemPos;SS.LastSubMenu1ItemNum = SS.ItemNum;SubMenu1.children[SM1z].className = "SelectedItemAnim Icon";}
+else if (SS.SubMenu == 2){SubMenu2.style.left = SS.SubMenu2ItemPos+'px';SS.LastSubMenu2ItemPos = SS.SubMenu2ItemPos;SS.LastSubMenu2ItemNum = SS.ItemNum;SubMenu2.children[SM2z].className = "SelectedItemAnim Icon";}
+else if (SS.SubMenu == 3){SubMenu3.style.left = SS.SubMenu3ItemPos+'px';SS.LastSubMenu3ItemPos = SS.SubMenu3ItemPos;SS.LastSubMenu3ItemNum = SS.ItemNum;SubMenu3.children[SM3z].className = "SelectedItemAnim Icon";}
+else if (SS.SubMenu == 4){SubMenu4.style.left = SS.SubMenu4ItemPos+'px';SS.LastSubMenu4ItemPos = SS.SubMenu4ItemPos;SS.LastSubMenu4ItemNum = SS.ItemNum;SubMenu4.children[SM4z].className = "SelectedItemAnim Icon";}
+else if (SS.SubMenu == 5){SubMenu5.style.left = SS.SubMenu5ItemPos+'px';SS.LastSubMenu5ItemPos = SS.SubMenu5ItemPos;SS.LastSubMenu5ItemNum = SS.ItemNum;SubMenu5.children[SM5z].className = "SelectedItemAnim Icon";}
+else if (SS.SubMenu == 6){SubMenu6.style.left = SS.SubMenu6ItemPos+'px';SS.LastSubMenu6ItemPos = SS.SubMenu6ItemPos;SS.LastSubMenu6ItemNum = SS.ItemNum;SubMenu6.children[SM6z].className = "SelectedItemAnim Icon";}
+else if (SS.SubMenu == 7){SubMenu7.style.left = SS.SubMenu7ItemPos+'px';SS.LastSubMenu7ItemPos = SS.SubMenu7ItemPos;SS.LastSubMenu7ItemNum = SS.ItemNum;SubMenu7.children[SM7z].className = "SelectedItemAnim Icon";}
+else if (SS.SubMenu == 8){SubMenu8.style.left = SS.SubMenu8ItemPos+'px';SS.LastSubMenu8ItemPos = SS.SubMenu8ItemPos;SS.LastSubMenu8ItemNum = SS.ItemNum;SubMenu8.children[SM8z].className = "SelectedItemAnim Icon";}
+else if (SS.SubMenu == 9){SubMenu9.style.left = SS.SubMenu9ItemPos+'px';SS.LastSubMenu9ItemPos = SS.SubMenu9ItemPos;SS.LastSubMenu9ItemNum = SS.ItemNum;SubMenu9.children[SM9z].className = "SelectedItemAnim Icon";}
+else if (SS.SubMenu == 10){SubMenu10.style.left = SS.SubMenu10ItemPos+'px';SS.LastSubMenu10ItemPos = SS.SubMenu10ItemPos;SS.LastSubMenu10ItemNum = SS.ItemNum;SubMenu10.children[SM10z].className = "SelectedItemAnim Icon";}
+
+// Update Item Title
+UpdateTitle();
+
+// Return Selected Item Back To Normal Size on Un-Select
+     if (SS.MainMenu == 1){var x = MainMenu.childElementCount;for (i=0; i<x; i++){MainMenu.children[i].className = "Box Icon";}}
+else if (SS.SubMenu == 1){var x = SubMenu1.childElementCount;for (i=0; i<x; i++){SubMenu1.children[i].className = "Box Icon";}}
+else if (SS.SubMenu == 2){var x = SubMenu2.childElementCount;for (i=0; i<x; i++){SubMenu2.children[i].className = "Box Icon";}}
+else if (SS.SubMenu == 3){var x = SubMenu3.childElementCount;for (i=0; i<x; i++){SubMenu3.children[i].className = "Box Icon";}}
+else if (SS.SubMenu == 4){var x = SubMenu4.childElementCount;for (i=0; i<x; i++){SubMenu4.children[i].className = "Box Icon";}}
+else if (SS.SubMenu == 5){var x = SubMenu5.childElementCount;for (i=0; i<x; i++){SubMenu5.children[i].className = "Box Icon";}}
+else if (SS.SubMenu == 6){var x = SubMenu6.childElementCount;for (i=0; i<x; i++){SubMenu6.children[i].className = "Box Icon";}}
+else if (SS.SubMenu == 7){var x = SubMenu7.childElementCount;for (i=0; i<x; i++){SubMenu7.children[i].className = "Box Icon";}}
+else if (SS.SubMenu == 8){var x = SubMenu8.childElementCount;for (i=0; i<x; i++){SubMenu8.children[i].className = "Box Icon";}}
+else if (SS.SubMenu == 9){var x = SubMenu9.childElementCount;for (i=0; i<x; i++){SubMenu9.children[i].className = "Box Icon";}}
+else if (SS.SubMenu == 10){var x = SubMenu10.childElementCount;for (i=0; i<x; i++){SubMenu10.children[i].className = "Box Icon";}}
+
+}//UpdateMenu function Ends!!!!//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Update Item Title Function
+function UpdateTitle(){
+Title.className = "TitleAnim";
+setTimeout(function(){
+     if (SS.MainMenu == 1){ChangeText(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  1){ChangeText(SubMenu1.children[SM1z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  2){ChangeText(SubMenu2.children[SM2z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  3){ChangeText(SubMenu3.children[SM3z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  4){ChangeText(SubMenu4.children[SM4z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  5){ChangeText(SubMenu5.children[SM5z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  6){ChangeText(SubMenu6.children[SM6z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  7){ChangeText(SubMenu7.children[SM7z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  8){ChangeText(SubMenu8.children[SM8z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  9){ChangeText(SubMenu9.children[SM9z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  10){ChangeText(SubMenu10.children[SM10z].getAttribute('PL-Title'));}
+},100);
+setTimeout(function(){Title.className = "Title";},100);
+}
+//var h=document.createElement("div");h.appendChild(document.createTextNode("2019 - Leeful"));h.setAttribute("style","position:fixed;left:0;right:0;bottom:6px;letter-spacing:2px;color:#BBCEEF;font-size:18px;font-weight:bold;text-align:center;");document.body.insertBefore(h,document.body.lastChild);
+
+// Focus SubMenu's Functions
+function FocusSubMenu1(){MenuContainer.className = "HideMenuContainer";SubMenu1Container.className = "MoveSubMenuContainer";SubMenu1.style.left = SS.LastSubMenu1ItemPos;SubTabA.className = "SubTabTxt";SubTabB.className = "SubTabLine";SubTabA.innerHTML = SM1t;}
+function FocusSubMenu2(){MenuContainer.className = "HideMenuContainer";SubMenu2Container.className = "MoveSubMenuContainer";SubMenu2.style.left = SS.LastSubMenu2ItemPos;SubTabA.className = "SubTabTxt";SubTabB.className = "SubTabLine";SubTabA.innerHTML = SM2t;}
+function FocusSubMenu3(){MenuContainer.className = "HideMenuContainer";SubMenu3Container.className = "MoveSubMenuContainer";SubMenu3.style.left = SS.LastSubMenu3ItemPos;SubTabA.className = "SubTabTxt";SubTabB.className = "SubTabLine";SubTabA.innerHTML = SM3t;}
+function FocusSubMenu4(){MenuContainer.className = "HideMenuContainer";SubMenu4Container.className = "MoveSubMenuContainer";SubMenu4.style.left = SS.LastSubMenu4ItemPos;SubTabA.className = "SubTabTxt";SubTabB.className = "SubTabLine";SubTabA.innerHTML = SM4t;}
+function FocusSubMenu5(){MenuContainer.className = "HideMenuContainer";SubMenu5Container.className = "MoveSubMenuContainer";SubMenu5.style.left = SS.LastSubMenu5ItemPos;SubTabA.className = "SubTabTxt";SubTabB.className = "SubTabLine";SubTabA.innerHTML = SM5t;}
+function FocusSubMenu6(){MenuContainer.className = "HideMenuContainer";SubMenu6Container.className = "MoveSubMenuContainer";SubMenu6.style.left = SS.LastSubMenu6ItemPos;SubTabA.className = "SubTabTxt";SubTabB.className = "SubTabLine";SubTabA.innerHTML = SM6t;}
+function FocusSubMenu7(){MenuContainer.className = "HideMenuContainer";SubMenu7Container.className = "MoveSubMenuContainer";SubMenu7.style.left = SS.LastSubMenu7ItemPos;SubTabA.className = "SubTabTxt";SubTabB.className = "SubTabLine";SubTabA.innerHTML = SM7t;}
+function FocusSubMenu8(){MenuContainer.className = "HideMenuContainer";SubMenu8Container.className = "MoveSubMenuContainer";SubMenu8.style.left = SS.LastSubMenu8ItemPos;SubTabA.className = "SubTabTxt";SubTabB.className = "SubTabLine";SubTabA.innerHTML = SM8t;}
+function FocusSubMenu9(){MenuContainer.className = "HideMenuContainer";SubMenu9Container.className = "MoveSubMenuContainer";SubMenu9.style.left = SS.LastSubMenu9ItemPos;SubTabA.className = "SubTabTxt";SubTabB.className = "SubTabLine";SubTabA.innerHTML = SM9t;}
+function FocusSubMenu10(){MenuContainer.className = "HideMenuContainer";SubMenu10Container.className = "MoveSubMenuContainer";SubMenu10.style.left = SS.LastSubMenu10ItemPos;SubTabA.className = "SubTabTxt";SubTabB.className = "SubTabLine";SubTabA.innerHTML = SM10t;}
+
+// Update SubMenu selected Item On Focus
+function UpdateSubMenu(){
+setTimeout(function(){
+GenerateSubMenuChildernCount();
+     if (SS.SubMenu == 1){SubMenu1.children[SM1z].className = "SelectedItem2 Icon";}
+else if (SS.SubMenu == 2){SubMenu2.children[SM2z].className = "SelectedItem2 Icon";}
+else if (SS.SubMenu == 3){SubMenu3.children[SM3z].className = "SelectedItem2 Icon";}
+else if (SS.SubMenu == 4){SubMenu4.children[SM4z].className = "SelectedItem2 Icon";}
+else if (SS.SubMenu == 5){SubMenu5.children[SM5z].className = "SelectedItem2 Icon";}
+else if (SS.SubMenu == 6){SubMenu6.children[SM6z].className = "SelectedItem2 Icon";}
+else if (SS.SubMenu == 7){SubMenu7.children[SM7z].className = "SelectedItem2 Icon";}
+else if (SS.SubMenu == 8){SubMenu8.children[SM8z].className = "SelectedItem2 Icon";}
+else if (SS.SubMenu == 9){SubMenu9.children[SM9z].className = "SelectedItem2 Icon";}
+else if (SS.SubMenu == 10){SubMenu10.children[SM10z].className = "SelectedItem2 Icon";}
+UpdateTitle();
+},0);
+}
+
+// UN-Focus ANY SubMenu Function
+function UNFocusSubMenu(){
+     if (SS.SubMenu == 1){SubMenu1.children[SM1z].className = "Box2 Icon";SubMenu1Container.className = "SubMenuContainer";SS.ItemNum = SM1n;}
+else if (SS.SubMenu == 2){SubMenu2.children[SM2z].className = "Box2 Icon";SubMenu2Container.className = "SubMenuContainer";SS.ItemNum = SM2n;}
+else if (SS.SubMenu == 3){SubMenu3.children[SM3z].className = "Box2 Icon";SubMenu3Container.className = "SubMenuContainer";SS.ItemNum = SM3n;}
+else if (SS.SubMenu == 4){SubMenu4.children[SM4z].className = "Box2 Icon";SubMenu4Container.className = "SubMenuContainer";SS.ItemNum = SM4n;}
+else if (SS.SubMenu == 5){SubMenu5.children[SM5z].className = "Box2 Icon";SubMenu5Container.className = "SubMenuContainer";SS.ItemNum = SM5n;}
+else if (SS.SubMenu == 6){SubMenu6.children[SM6z].className = "Box2 Icon";SubMenu6Container.className = "SubMenuContainer";SS.ItemNum = SM6n;}
+else if (SS.SubMenu == 7){SubMenu7.children[SM7z].className = "Box2 Icon";SubMenu7Container.className = "SubMenuContainer";SS.ItemNum = SM7n;}
+else if (SS.SubMenu == 8){SubMenu8.children[SM8z].className = "Box2 Icon";SubMenu8Container.className = "SubMenuContainer";SS.ItemNum = SM8n;}
+else if (SS.SubMenu == 9){SubMenu9.children[SM9z].className = "Box2 Icon";SubMenu9Container.className = "SubMenuContainer";SS.ItemNum = SM9n;}
+else if (SS.SubMenu == 10){SubMenu10.children[SM10z].className = "Box2 Icon";SubMenu10Container.className = "SubMenuContainer";SS.ItemNum = SM10n;}
+
+MenuContainer.className = "MenuContainer2";
+SubTabA.className = "SubTabTxtAnim";SubTabB.className = "SubTabLineAnim";
+SS.SubMenu = 0;
+     if (SS.MainMenu == 1){ChangeText(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  1){ChangeText(SubMenu1.children[SM1z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  2){ChangeText(SubMenu2.children[SM2z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  3){ChangeText(SubMenu3.children[SM3z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  4){ChangeText(SubMenu4.children[SM4z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  5){ChangeText(SubMenu5.children[SM5z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  6){ChangeText(SubMenu6.children[SM6z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  7){ChangeText(SubMenu7.children[SM7z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  8){ChangeText(SubMenu8.children[SM8z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  9){ChangeText(SubMenu9.children[SM9z].getAttribute('PL-Title'));}
+else if (SS.SubMenu ==  10){ChangeText(SubMenu10.children[SM10z].getAttribute('PL-Title'));}
+}
+
+// Load A Payload.bin Function
+function LoadPayload(){
+Loader.innerHTML='<object type="text/html" data="files/exploit.html" style="width:265px; height:56px;"></object>';}
+
+//Load Selected Exploit Page Function
+function loadPage(){
+SS.LastPage = 'files/exploit.html';
+      // Special cases with extra variables!!
+     if (Title.innerHTML == 'Hen'){SS.ThisIsHen = '1'; SS.Payload = MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin'); LoadPayload();}
+else if (Title.innerHTML == 'Bin Loader'){SS.ThisIsBinLoader = '1'; LoadPayload();}
+else if (Title.innerHTML == 'Mira'){SS.ThisIsMira = '1'; SS.Payload = 'Mira.bin'; LoadPayload();}
+else if (Title.innerHTML == 'Orbis AFR'){SS.ThisIsOrbisAFR = '1'; SS.bin1="Mira.bin"; SS.bin2="OrbisAFR.bin"; LoadPayload();}
+else if (Title.innerHTML == 'Save Mounter + FTP'){SS.ThisIsSaveMounter = '1';SS.bin1="SaveMounter.bin"; SS.bin2="FTP.bin"; LoadPayload();}
+else if (Title.innerHTML == 'Fan Control'){SS.ThisIsFanControl='1';SS.LastPage = 'files/FanControlLoader.html';Loader.innerHTML='<object type="text/html" data="files/FanControlLoader.html" style="width:265px; height:56px;"></object>';}
+else if (Title.innerHTML == 'Firmware Spoofer'){ShowFirmwareVer();SS.ThisIsFwSpoofer='1';SS.LastPage = 'files/FwSpooferLoader.html';Loader.innerHTML='<object type="text/html" data="files/FwSpooferLoader.html" style="width:265px; height:56px;"></object>';}
+else if (Title.innerHTML == 'ReactPSPlus'){SS.ThisIsReact='1';SS.Payload = 'ReactPSPlus.bin';SS.LastPage = 'files/ReactPSPlus.html';Loader.innerHTML='<object type="text/html" data="files/ReactPSPlus.html" style="width:265px; height:56px;"></object>';}
+else if (Title.innerHTML == 'ReactPSPlus-UNDO'){SS.ThisIsReactUNDO='1';SS.LastPage = 'files/ReactPSPlus_UNDO.html';Loader.innerHTML='<object type="text/html" data="files/ReactPSPlus_UNDO.html" style="width:265px; height:56px;"></object>';}
+else if (Title.innerHTML == 'ReactPSPlus-MOD'){SS.ThisIsReactMOD='1';SS.LastPage = 'files/ReactPSPlus_MODLoader.html';Loader.innerHTML='<object type="text/html" data="files/ReactPSPlus_MODLoader.html" style="width:265px; height:56px;"></object>';}
+else if (Title.innerHTML == 'Credits'){SS.ThisIsCredits='1';SS.LastPage = 'files/Credits.html';ScrOverlay.style.opacity="1";ScrOverlay.style.display = "block";ScrOverlay.innerHTML='<object type="text/html" data="files/Credits.html" style="width:100%; height:100%;"></object>';}
+
+     // SubMenu Header Item
+else if (SS.MainMenu == 1 && MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin').includes('SUBMENU')){}
+
+     // Regular Main Menu Items
+else if (SS.MainMenu == 1){SS.Payload = MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin'); LoadPayload();}
+
+     // Sub Menu Items	 
+else if (SS.SubMenu == 1){SS.Payload = SubMenu1.children[SM1z].getAttribute('PL-Bin'); LoadPayload();}
+else if (SS.SubMenu == 2){SS.Payload = SubMenu2.children[SM2z].getAttribute('PL-Bin'); LoadPayload();}
+else if (SS.SubMenu == 3){SS.Payload = SubMenu3.children[SM3z].getAttribute('PL-Bin'); LoadPayload();}
+else if (SS.SubMenu == 4){SS.Payload = SubMenu4.children[SM4z].getAttribute('PL-Bin'); LoadPayload();}
+else if (SS.SubMenu == 5){SS.Payload = SubMenu5.children[SM5z].getAttribute('PL-Bin'); LoadPayload();}
+else if (SS.SubMenu == 6){SS.Payload = SubMenu6.children[SM6z].getAttribute('PL-Bin'); LoadPayload();}
+else if (SS.SubMenu == 7){SS.Payload = SubMenu7.children[SM7z].getAttribute('PL-Bin'); LoadPayload();}
+else if (SS.SubMenu == 8){SS.Payload = SubMenu8.children[SM8z].getAttribute('PL-Bin'); LoadPayload();}
+else if (SS.SubMenu == 9){SS.Payload = SubMenu9.children[SM9z].getAttribute('PL-Bin'); LoadPayload();}
+else if (SS.SubMenu == 10){SS.Payload = SubMenu10.children[SM10z].getAttribute('PL-Bin'); LoadPayload();}
+}
+
+//Load Selected Exploit Page Function For Special Page Payloads
+function loadPage2(){
+     if (SS.ThisIsFanControl == '2'){window.setTEMP();}
+else if (SS.ThisIsFwSpoofer == '2'){window.setFW();}
+}
+
+// Change Title Text Function
+function ChangeText(text){Title.innerHTML = text;}
+
+// Change InfoBox Text Function
+function ChangeInfoBoxTitle(text){InfoTitle.innerHTML = text;}
+function ChangeInfoBoxVer(text){InfoVerAuth.innerHTML = text;}
+function ChangeInfoBoxDesc(text){InfoDesc.innerHTML = text;}
+IBT = ChangeInfoBoxTitle;IBV = ChangeInfoBoxVer;IBD = ChangeInfoBoxDesc;
+
+// PopUp Function
+function pop(){Popup.classList.remove('animation'); void Popup.offsetWidth;Popup.classList.add('animation');}
+
+// BottomPopup Function
 function BottomPop(){BottomPopup.classList.add('animation');}
-function GetInfo(){SFIX = Title.innerHTML;if (SFIX=='AppToUSB'||SFIX=='Avatar Dump'||SFIX=='Avatar Inject'||SFIX=='DB & SG Backup'||SFIX=='PKG Backup'||SFIX=='Disc Dump'){SS.StoogedFix = '1';}
-if(SS.MainMenu==1&&MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin').includes('SUBMENU')){}
-else if(SS.Loaded==null){SS.InfoBox=1;var x=document.querySelectorAll(".box");var i;for(i=0;i<x.length;i++){x[i].style.opacity="0";}
-InfoBox.style.display='block';Title.style.display='none';if(SS.MainMenu==1&&MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin').includes('SUBMENU')){IBT(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));IBV(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Ver'));IBD(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Desc'));}else if(SS.MainMenu==1){IBT(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));IBV(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Ver'));IBD(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Desc'));}else if(SS.SubMenu==1){SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu1.children[SM1z].getAttribute('PL-Title'));IBV(SubMenu1.children[SM1z].getAttribute('PL-Ver'));IBD(SubMenu1.children[SM1z].getAttribute('PL-Desc'));}else if(SS.SubMenu==2){SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu2.children[SM2z].getAttribute('PL-Title'));IBV(SubMenu2.children[SM2z].getAttribute('PL-Ver'));IBD(SubMenu2.children[SM2z].getAttribute('PL-Desc'));}else if(SS.SubMenu==3){SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu3.children[SM3z].getAttribute('PL-Title'));IBV(SubMenu3.children[SM3z].getAttribute('PL-Ver'));IBD(SubMenu3.children[SM3z].getAttribute('PL-Desc'));}else if(SS.SubMenu==4){SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu4.children[SM4z].getAttribute('PL-Title'));IBV(SubMenu4.children[SM4z].getAttribute('PL-Ver'));IBD(SubMenu4.children[SM4z].getAttribute('PL-Desc'));}else if(SS.SubMenu==5){SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu5.children[SM5z].getAttribute('PL-Title'));IBV(SubMenu5.children[SM5z].getAttribute('PL-Ver'));IBD(SubMenu5.children[SM5z].getAttribute('PL-Desc'));}else if(SS.SubMenu==6){SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu6.children[SM6z].getAttribute('PL-Title'));IBV(SubMenu6.children[SM6z].getAttribute('PL-Ver'));IBD(SubMenu6.children[SM6z].getAttribute('PL-Desc'));}else if(SS.SubMenu==7){SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu7.children[SM7z].getAttribute('PL-Title'));IBV(SubMenu7.children[SM7z].getAttribute('PL-Ver'));IBD(SubMenu7.children[SM7z].getAttribute('PL-Desc'));}else if(SS.SubMenu==8){SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu8.children[SM8z].getAttribute('PL-Title'));IBV(SubMenu8.children[SM8z].getAttribute('PL-Ver'));IBD(SubMenu8.children[SM8z].getAttribute('PL-Desc'));}else if(SS.SubMenu==9){SubTabA.style.display='none';SubTabB.style.display='none';IBT(SubMenu9.children[SM9z].getAttribute('PL-Title'));IBV(SubMenu9.children[SM9z].getAttribute('PL-Ver'));IBD(SubMenu9.children[SM9z].getAttribute('PL-Desc'));}
-loadPage();}else{loadPage2();}}
-function ShowInfo(){SS.InfoBox=1;if(Title.innerHTML.includes('ReactPSPlus')){ShowTimeAndDate();}
-if(Title.innerHTML=='Firmware Spoofer'){ShowFirmwareVer();}
-if(Title.innerHTML=='Fan Control'){ShowFanTemp();}
-var x=document.querySelectorAll(".box");var i;for(i=0;i<x.length;i++){x[i].style.opacity="0";}
-InfoBox.style.display='block';Title.style.display='none';if(SS.MainMenu==1&&MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin').includes('SUBMENU')){MainMenu.children[SS.ItemNum-1].className="InfoIcon icon2";IBT(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));IBV(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Ver'));IBD(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Desc'));}else if(SS.MainMenu==1){MainMenu.children[SS.ItemNum-1].className="InfoIcon icon";IBT(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));IBV(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Ver'));IBD(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Desc'));}else if(SS.SubMenu==1){SubTabA.style.display='none';SubTabB.style.display='none';SubMenu1.children[SM1z].className="InfoIcon icon";IBT(SubMenu1.children[SM1z].getAttribute('PL-Title'));IBV(SubMenu1.children[SM1z].getAttribute('PL-Ver'));IBD(SubMenu1.children[SM1z].getAttribute('PL-Desc'));}else if(SS.SubMenu==2){SubTabA.style.display='none';SubTabB.style.display='none';SubMenu2.children[SM2z].className="InfoIcon icon";IBT(SubMenu2.children[SM2z].getAttribute('PL-Title'));IBV(SubMenu2.children[SM2z].getAttribute('PL-Ver'));IBD(SubMenu2.children[SM2z].getAttribute('PL-Desc'));}else if(SS.SubMenu==3){SubTabA.style.display='none';SubTabB.style.display='none';SubMenu3.children[SM3z].className="InfoIcon icon";IBT(SubMenu3.children[SM3z].getAttribute('PL-Title'));IBV(SubMenu3.children[SM3z].getAttribute('PL-Ver'));IBD(SubMenu3.children[SM3z].getAttribute('PL-Desc'));}else if(SS.SubMenu==4){SubTabA.style.display='none';SubTabB.style.display='none';SubMenu4.children[SM4z].className="InfoIcon icon";IBT(SubMenu4.children[SM4z].getAttribute('PL-Title'));IBV(SubMenu4.children[SM4z].getAttribute('PL-Ver'));IBD(SubMenu4.children[SM4z].getAttribute('PL-Desc'));}else if(SS.SubMenu==5){SubTabA.style.display='none';SubTabB.style.display='none';SubMenu5.children[SM5z].className="InfoIcon icon";IBT(SubMenu5.children[SM5z].getAttribute('PL-Title'));IBV(SubMenu5.children[SM5z].getAttribute('PL-Ver'));IBD(SubMenu5.children[SM5z].getAttribute('PL-Desc'));}else if(SS.SubMenu==6){SubTabA.style.display='none';SubTabB.style.display='none';SubMenu6.children[SM6z].className="InfoIcon icon";IBT(SubMenu6.children[SM6z].getAttribute('PL-Title'));IBV(SubMenu6.children[SM6z].getAttribute('PL-Ver'));IBD(SubMenu6.children[SM6z].getAttribute('PL-Desc'));}else if(SS.SubMenu==7){SubTabA.style.display='none';SubTabB.style.display='none';SubMenu7.children[SM7z].className="InfoIcon icon";IBT(SubMenu7.children[SM7z].getAttribute('PL-Title'));IBV(SubMenu7.children[SM7z].getAttribute('PL-Ver'));IBD(SubMenu7.children[SM7z].getAttribute('PL-Desc'));}else if(SS.SubMenu==8){SubTabA.style.display='none';SubTabB.style.display='none';SubMenu8.children[SM8z].className="InfoIcon icon";IBT(SubMenu8.children[SM8z].getAttribute('PL-Title'));IBV(SubMenu8.children[SM8z].getAttribute('PL-Ver'));IBD(SubMenu8.children[SM8z].getAttribute('PL-Desc'));}else if(SS.SubMenu==9){SubTabA.style.display='none';SubTabB.style.display='none';SubMenu9.children[SM9z].className="InfoIcon icon";IBT(SubMenu9.children[SM9z].getAttribute('PL-Title'));IBV(SubMenu9.children[SM9z].getAttribute('PL-Ver'));IBD(SubMenu9.children[SM9z].getAttribute('PL-Desc'));}}
-function HideInfo(){SS.InfoBox=0;if(Title.innerHTML.includes('ReactPSPlus')){HideTimeAndDate();}
-if(Title.innerHTML=='Firmware Spoofer'){HideFirmwareVer();}
-if(Title.innerHTML=='Fan Control'){HideFanTemp();}
-var x=document.querySelectorAll(".box");var i;for(i=0;i<x.length;i++){x[i].style.opacity="1";}
-InfoBox.style.display='none';Title.style.display='block';if(SS.MainMenu==1&&MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin').includes('SUBMENU')){MainMenu.children[SS.ItemNum-1].className="SelectedItem icon2";}else if(SS.MainMenu==1){MainMenu.children[SS.ItemNum-1].className="SelectedItem icon";}else if(SS.SubMenu==1){SubMenu1.children[SM1z].className="SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}else if(SS.SubMenu==2){SubMenu2.children[SM2z].className="SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}else if(SS.SubMenu==3){SubMenu3.children[SM3z].className="SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}else if(SS.SubMenu==4){SubMenu4.children[SM4z].className="SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}else if(SS.SubMenu==5){SubMenu5.children[SM5z].className="SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}else if(SS.SubMenu==6){SubMenu6.children[SM6z].className="SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}else if(SS.SubMenu==7){SubMenu7.children[SM7z].className="SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}else if(SS.SubMenu==8){SubMenu8.children[SM8z].className="SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}else if(SS.SubMenu==9){SubMenu9.children[SM9z].className="SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}}
-function HideLoaderBox(){SS.Loaded='1';setTimeout(function(){var x=document.querySelectorAll(".SelectedItem");var i;for(i=0;i<x.length;i++){x[i].className="InfoIcon Icon";}},1500);}LS.CurrentTemp=RC('CurrentTemp');LS.KernEpochDiff=RC('KernEpochDiff');
-if(LS.AutoHEN!='on'){LS.AutoHEN="off";AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = OFF");}if(LS.AutoHEN=='on'){AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = ON");}
-function RunAutoHen(){SS.InfoBox=1;SS.ThisIsAutoHen = '1';var x = document.querySelectorAll(".box");var i;for(i = 0; i < x.length; i++){x[i].style.opacity="0";}InfoBox.style.display='block'; Title.style.display='none';
+
+
+// SHOW INFO AND LOAD PAYLOAD function
+function GetInfo(){
+     // Some Exceptions for Stooged OOM Fix
+     SFIX = Title.innerHTML;
+     if (SFIX=='AppToUSB'||SFIX=='Avatar Dump'||SFIX=='Avatar Inject'||SFIX=='DB & SG Backup'||SFIX=='PKG Backup'||SFIX=='Disc Dump'){SS.StoogedFix = '1';}
+     if (SS.MainMenu == 1 && MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin').includes('SUBMENU')){}//Do nothing if a SubMenu
+else if(SS.Loaded==null){
+SS.InfoBox=1;
+var x = document.querySelectorAll(".box"); var i; for(i = 0; i < x.length; i++){x[i].style.opacity="0";}InfoBox.style.display='block'; Title.style.display='none';
+     if (SS.MainMenu == 1 && MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin').includes('SUBMENU')){IBT(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));IBV(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Ver'));IBD(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Desc'));}
+else if (SS.MainMenu == 1){IBT(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));IBV(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Ver'));IBD(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 1){SubTabA.style.display='none'; SubTabB.style.display='none';IBT(SubMenu1.children[SM1z].getAttribute('PL-Title'));IBV(SubMenu1.children[SM1z].getAttribute('PL-Ver'));IBD(SubMenu1.children[SM1z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 2){SubTabA.style.display='none'; SubTabB.style.display='none';IBT(SubMenu2.children[SM2z].getAttribute('PL-Title'));IBV(SubMenu2.children[SM2z].getAttribute('PL-Ver'));IBD(SubMenu2.children[SM2z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 3){SubTabA.style.display='none'; SubTabB.style.display='none';IBT(SubMenu3.children[SM3z].getAttribute('PL-Title'));IBV(SubMenu3.children[SM3z].getAttribute('PL-Ver'));IBD(SubMenu3.children[SM3z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 4){SubTabA.style.display='none'; SubTabB.style.display='none';IBT(SubMenu4.children[SM4z].getAttribute('PL-Title'));IBV(SubMenu4.children[SM4z].getAttribute('PL-Ver'));IBD(SubMenu4.children[SM4z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 5){SubTabA.style.display='none'; SubTabB.style.display='none';IBT(SubMenu5.children[SM5z].getAttribute('PL-Title'));IBV(SubMenu5.children[SM5z].getAttribute('PL-Ver'));IBD(SubMenu5.children[SM5z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 6){SubTabA.style.display='none'; SubTabB.style.display='none';IBT(SubMenu6.children[SM6z].getAttribute('PL-Title'));IBV(SubMenu6.children[SM6z].getAttribute('PL-Ver'));IBD(SubMenu6.children[SM6z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 7){SubTabA.style.display='none'; SubTabB.style.display='none';IBT(SubMenu7.children[SM7z].getAttribute('PL-Title'));IBV(SubMenu7.children[SM7z].getAttribute('PL-Ver'));IBD(SubMenu7.children[SM7z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 8){SubTabA.style.display='none'; SubTabB.style.display='none';IBT(SubMenu8.children[SM8z].getAttribute('PL-Title'));IBV(SubMenu8.children[SM8z].getAttribute('PL-Ver'));IBD(SubMenu8.children[SM8z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 9){SubTabA.style.display='none'; SubTabB.style.display='none';IBT(SubMenu9.children[SM9z].getAttribute('PL-Title'));IBV(SubMenu9.children[SM9z].getAttribute('PL-Ver'));IBD(SubMenu9.children[SM9z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 10){SubTabA.style.display='none'; SubTabB.style.display='none';IBT(SubMenu10.children[SM10z].getAttribute('PL-Title'));IBV(SubMenu10.children[SM10z].getAttribute('PL-Ver'));IBD(SubMenu10.children[SM10z].getAttribute('PL-Desc'));}
+loadPage();}
+else{loadPage2();}
+}
+
+// R1 SHOW INFO function
+function ShowInfo(){
+SS.InfoBox=1;
+if (Title.innerHTML.includes('ReactPSPlus')){ShowTimeAndDate();}
+if (Title.innerHTML == 'Firmware Spoofer'){ShowFirmwareVer();}
+if (Title.innerHTML == 'Fan Control'){ShowFanTemp();}
+var x = document.querySelectorAll(".box"); var i; for(i = 0; i < x.length; i++){x[i].style.opacity="0";}InfoBox.style.display='block'; Title.style.display='none';
+     if (SS.MainMenu == 1 && MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin').includes('SUBMENU')){MainMenu.children[SS.ItemNum-1].className = "InfoIcon icon2";IBT(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));IBV(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Ver'));IBD(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Desc'));}
+else if (SS.MainMenu == 1){MainMenu.children[SS.ItemNum-1].className = "InfoIcon icon";IBT(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));IBV(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Ver'));IBD(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 1){SubTabA.style.display='none'; SubTabB.style.display='none';SubMenu1.children[SM1z].className = "InfoIcon icon";IBT(SubMenu1.children[SM1z].getAttribute('PL-Title'));IBV(SubMenu1.children[SM1z].getAttribute('PL-Ver'));IBD(SubMenu1.children[SM1z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 2){SubTabA.style.display='none'; SubTabB.style.display='none';SubMenu2.children[SM2z].className = "InfoIcon icon";IBT(SubMenu2.children[SM2z].getAttribute('PL-Title'));IBV(SubMenu2.children[SM2z].getAttribute('PL-Ver'));IBD(SubMenu2.children[SM2z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 3){SubTabA.style.display='none'; SubTabB.style.display='none';SubMenu3.children[SM3z].className = "InfoIcon icon";IBT(SubMenu3.children[SM3z].getAttribute('PL-Title'));IBV(SubMenu3.children[SM3z].getAttribute('PL-Ver'));IBD(SubMenu3.children[SM3z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 4){SubTabA.style.display='none'; SubTabB.style.display='none';SubMenu4.children[SM4z].className = "InfoIcon icon";IBT(SubMenu4.children[SM4z].getAttribute('PL-Title'));IBV(SubMenu4.children[SM4z].getAttribute('PL-Ver'));IBD(SubMenu4.children[SM4z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 5){SubTabA.style.display='none'; SubTabB.style.display='none';SubMenu5.children[SM5z].className = "InfoIcon icon";IBT(SubMenu5.children[SM5z].getAttribute('PL-Title'));IBV(SubMenu5.children[SM5z].getAttribute('PL-Ver'));IBD(SubMenu5.children[SM5z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 6){SubTabA.style.display='none'; SubTabB.style.display='none';SubMenu6.children[SM6z].className = "InfoIcon icon";IBT(SubMenu6.children[SM6z].getAttribute('PL-Title'));IBV(SubMenu6.children[SM6z].getAttribute('PL-Ver'));IBD(SubMenu6.children[SM6z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 7){SubTabA.style.display='none'; SubTabB.style.display='none';SubMenu7.children[SM7z].className = "InfoIcon icon";IBT(SubMenu7.children[SM7z].getAttribute('PL-Title'));IBV(SubMenu7.children[SM7z].getAttribute('PL-Ver'));IBD(SubMenu7.children[SM7z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 8){SubTabA.style.display='none'; SubTabB.style.display='none';SubMenu8.children[SM8z].className = "InfoIcon icon";IBT(SubMenu8.children[SM8z].getAttribute('PL-Title'));IBV(SubMenu8.children[SM8z].getAttribute('PL-Ver'));IBD(SubMenu8.children[SM8z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 9){SubTabA.style.display='none'; SubTabB.style.display='none';SubMenu9.children[SM9z].className = "InfoIcon icon";IBT(SubMenu9.children[SM9z].getAttribute('PL-Title'));IBV(SubMenu9.children[SM9z].getAttribute('PL-Ver'));IBD(SubMenu9.children[SM9z].getAttribute('PL-Desc'));}
+else if (SS.SubMenu == 10){SubTabA.style.display='none'; SubTabB.style.display='none';SubMenu10.children[SM10z].className = "InfoIcon icon";IBT(SubMenu10.children[SM10z].getAttribute('PL-Title'));IBV(SubMenu10.children[SM10z].getAttribute('PL-Ver'));IBD(SubMenu10.children[SM10z].getAttribute('PL-Desc'));}
+}
+
+// R1 HIDE INFO function
+function HideInfo(){
+SS.InfoBox=0;
+if (Title.innerHTML.includes('ReactPSPlus')){HideTimeAndDate();}
+if (Title.innerHTML == 'Firmware Spoofer'){HideFirmwareVer();}
+if (Title.innerHTML == 'Fan Control'){HideFanTemp();}
+var x = document.querySelectorAll(".box"); var i; for (i = 0; i < x.length; i++){x[i].style.opacity="1";}InfoBox.style.display='none';Title.style.display='block';
+     if (SS.MainMenu == 1 && MainMenu.children[SS.ItemNum-1].getAttribute('PL-Bin').includes('SUBMENU')){MainMenu.children[SS.ItemNum-1].className = "SelectedItem icon2";}
+else if (SS.MainMenu == 1){MainMenu.children[SS.ItemNum-1].className = "SelectedItem icon";}
+else if (SS.SubMenu == 1){SubMenu1.children[SM1z].className = "SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}
+else if (SS.SubMenu == 2){SubMenu2.children[SM2z].className = "SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}
+else if (SS.SubMenu == 3){SubMenu3.children[SM3z].className = "SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}
+else if (SS.SubMenu == 4){SubMenu4.children[SM4z].className = "SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}
+else if (SS.SubMenu == 5){SubMenu5.children[SM5z].className = "SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}
+else if (SS.SubMenu == 6){SubMenu6.children[SM6z].className = "SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}
+else if (SS.SubMenu == 7){SubMenu7.children[SM7z].className = "SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}
+else if (SS.SubMenu == 8){SubMenu8.children[SM8z].className = "SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}
+else if (SS.SubMenu == 9){SubMenu9.children[SM9z].className = "SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}
+else if (SS.SubMenu == 10){SubMenu10.children[SM10z].className = "SelectedItem icon";SubTabA.style.display='block';SubTabB.style.display='block';}
+}
+
+// HIDE Loader Box
+function HideLoaderBox(){
+SS.Loaded = '1'; setTimeout(function(){var x=document.querySelectorAll(".SelectedItem");var i;for(i=0;i < x.length;i++){x[i].className="InfoIcon Icon";}},1500);
+}
+
+// Update Settings to keep in memory
+LS.CurrentTemp=RC('CurrentTemp');
+LS.KernEpochDiff=RC('KernEpochDiff');
+
+// AutoHen Stuff
+if (LS.AutoHEN != 'on'){LS.AutoHEN = "off"; AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = OFF");}
+if (LS.AutoHEN == 'on'){AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = ON");}
+function RunAutoHen(){
+SS.InfoBox=1; SS.ThisIsAutoHen = '1';var x = document.querySelectorAll(".box"); var i; for(i = 0; i < x.length; i++){x[i].style.opacity="0";}InfoBox.style.display='block'; Title.style.display='none';
 IBT(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));IBV(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Ver'));IBD(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Desc'));
-Loader.innerHTML='<object type="text/html" data="files/exploit.html" style="width:265px; height:56px;"></object>';}if (UA=="5.05"||UA=="5.07"){HasHenRun="no";}if (UA != "5.05" && UA != "5.07" && LS.AutoHEN == 'on'){AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = ON - Hen Has Loaded");}
-function LoadAutoHen(){if(LS.IsItCached=="yes"&&HasHenRun=="no"&&LS.AutoHEN=="on"){RunAutoHen();}}window.onload = LoadAutoHen
-window.onkeyup=checkKeyUp;function checkKeyUp(e){e=e||window.event;if(e.keyCode=='117'&&SS.Loaded==null){HideInfo();}
-else if(e.keyCode=='118'&&LS.AutoHEN=="on"&&SS.ThisIsCredits!=1){AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = OFF");LS.AutoHEN="off";}
-else if(e.keyCode=='118'&&LS.AutoHEN=="off"&&SS.ThisIsCredits!=1){AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = ON");LS.AutoHEN="on";}}
-window.onkeydown=checkKeyDown;function checkKeyDown(e){e=e||window.event;var MoveMenu=164;if(e.keyCode=='27'&&SS.ThisIsCredits==1){SS.InfoBox=0;SS.removeItem('LastPage');SS.ThisIsCredits=0;window.location.reload();}else if(e.keyCode=='117'&&SS.Loaded==null){ShowInfo();}
-else if(SS.ThisIsFanControl!=null||SS.ThisIsFwSpoofer!=null||SS.ThisIsReactMOD!=null){}
-else if(e.keyCode=='38'&&SS.InfoBox!=1&&SS.MainMenu==0){SS.MainMenu=1;UNFocusSubMenu();}
-else if(e.keyCode=='37'&&SS.InfoBox!=1&&SS.MainMenu==1&&SS.ItemNum-1>=1&&SS.ItemNum<=MMtotal){SS.ItemPos=parseInt(SS.ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();}
-else if(e.keyCode=='39'&&SS.InfoBox!=1&&SS.MainMenu==1&&SS.ItemNum-1>=0&&SS.ItemNum<MMtotal){SS.ItemPos=parseInt(SS.ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();}
-else if(e.keyCode=='40'&&SS.InfoBox!=1&&SS.ItemNum==SM1n){SS.SubMenu=1;SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu1ItemNum;FocusSubMenu1();UpdateSubMenu();}
-else if(e.keyCode=='37'&&SS.InfoBox!=1&&SS.SubMenu==1&&SS.ItemNum-1>MMtotal&&SS.ItemNum<=SM1total){SS.SubMenu1ItemPos=parseInt(SS.SubMenu1ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();}
-else if(e.keyCode=='39'&&SS.InfoBox!=1&&SS.SubMenu==1&&SS.ItemNum-1>=MMtotal&&SS.ItemNum<SM1total){SS.SubMenu1ItemPos=parseInt(SS.SubMenu1ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();}
-else if(e.keyCode=='40'&&SS.InfoBox!=1&&SS.ItemNum==SM2n){SS.SubMenu=2;SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu2ItemNum;FocusSubMenu2();UpdateSubMenu();}
-else if(e.keyCode=='37'&&SS.InfoBox!=1&&SS.SubMenu==2&&SS.ItemNum-1>SM1total&&SS.ItemNum<=SM2total){SS.SubMenu2ItemPos=parseInt(SS.SubMenu2ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();}
-else if(e.keyCode=='39'&&SS.InfoBox!=1&&SS.SubMenu==2&&SS.ItemNum-1>=SM1total&&SS.ItemNum<SM2total){SS.SubMenu2ItemPos=parseInt(SS.SubMenu2ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();}
-else if(e.keyCode=='40'&&SS.InfoBox!=1&&SS.ItemNum==SM3n){SS.SubMenu=3;SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu3ItemNum;FocusSubMenu3();UpdateSubMenu();}
-else if(e.keyCode=='37'&&SS.InfoBox!=1&&SS.SubMenu==3&&SS.ItemNum-1>SM2total&&SS.ItemNum<=SM3total){SS.SubMenu3ItemPos=parseInt(SS.SubMenu3ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();}
-else if(e.keyCode=='39'&&SS.InfoBox!=1&&SS.SubMenu==3&&SS.ItemNum-1>=SM2total&&SS.ItemNum<SM3total){SS.SubMenu3ItemPos=parseInt(SS.SubMenu3ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();}
-else if(e.keyCode=='40'&&SS.InfoBox!=1&&SS.ItemNum==SM4n){SS.SubMenu=4;SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu4ItemNum;FocusSubMenu4();UpdateSubMenu();}
-else if(e.keyCode=='37'&&SS.InfoBox!=1&&SS.SubMenu==4&&SS.ItemNum-1>SM3total&&SS.ItemNum<=SM4total){SS.SubMenu4ItemPos=parseInt(SS.SubMenu4ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();}
-else if(e.keyCode=='39'&&SS.InfoBox!=1&&SS.SubMenu==4&&SS.ItemNum-1>=SM3total&&SS.ItemNum<SM4total){SS.SubMenu4ItemPos=parseInt(SS.SubMenu4ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();}
-else if(e.keyCode=='40'&&SS.InfoBox!=1&&SS.ItemNum==SM5n){SS.SubMenu=5;SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu5ItemNum;FocusSubMenu5();UpdateSubMenu();}
-else if(e.keyCode=='37'&&SS.InfoBox!=1&&SS.SubMenu==5&&SS.ItemNum-1>SM4total&&SS.ItemNum<=SM5total){SS.SubMenu5ItemPos=parseInt(SS.SubMenu5ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();}
-else if(e.keyCode=='39'&&SS.InfoBox!=1&&SS.SubMenu==5&&SS.ItemNum-1>=SM4total&&SS.ItemNum<SM5total){SS.SubMenu5ItemPos=parseInt(SS.SubMenu5ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();}
-else if(e.keyCode=='40'&&SS.InfoBox!=1&&SS.ItemNum==SM6n){SS.SubMenu=6;SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu6ItemNum;FocusSubMenu6();UpdateSubMenu();}
-else if(e.keyCode=='37'&&SS.InfoBox!=1&&SS.SubMenu==6&&SS.ItemNum-1>SM5total&&SS.ItemNum<=SM6total){SS.SubMenu6ItemPos=parseInt(SS.SubMenu6ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();}
-else if(e.keyCode=='39'&&SS.InfoBox!=1&&SS.SubMenu==6&&SS.ItemNum-1>=SM5total&&SS.ItemNum<SM6total){SS.SubMenu6ItemPos=parseInt(SS.SubMenu6ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();}
-else if(e.keyCode=='40'&&SS.InfoBox!=1&&SS.ItemNum==SM7n){SS.SubMenu=7;SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu7ItemNum;FocusSubMenu7();UpdateSubMenu();}
-else if(e.keyCode=='37'&&SS.InfoBox!=1&&SS.SubMenu==7&&SS.ItemNum-1>SM6total&&SS.ItemNum<=SM7total){SS.SubMenu7ItemPos=parseInt(SS.SubMenu7ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();}
-else if(e.keyCode=='39'&&SS.InfoBox!=1&&SS.SubMenu==7&&SS.ItemNum-1>=SM6total&&SS.ItemNum<SM7total){SS.SubMenu7ItemPos=parseInt(SS.SubMenu7ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();}
-else if(e.keyCode=='40'&&SS.InfoBox!=1&&SS.ItemNum==SM8n){SS.SubMenu=8;SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu8ItemNum;FocusSubMenu8();UpdateSubMenu();}
-else if(e.keyCode=='37'&&SS.InfoBox!=1&&SS.SubMenu==8&&SS.ItemNum-1>SM7total&&SS.ItemNum<=SM8total){SS.SubMenu8ItemPos=parseInt(SS.SubMenu8ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();}
-else if(e.keyCode=='39'&&SS.InfoBox!=1&&SS.SubMenu==8&&SS.ItemNum-1>=SM7total&&SS.ItemNum<SM8total){SS.SubMenu8ItemPos=parseInt(SS.SubMenu8ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();}
-else if(e.keyCode=='40'&&SS.InfoBox!=1&&SS.ItemNum==SM9n){SS.SubMenu=9;SS.MainMenu=0;SS.ItemNum=SS.LastSubMenu9ItemNum;FocusSubMenu9();UpdateSubMenu();}
-else if(e.keyCode=='37'&&SS.InfoBox!=1&&SS.SubMenu==9&&SS.ItemNum-1>SM8total&&SS.ItemNum<=SM9total){SS.SubMenu9ItemPos=parseInt(SS.SubMenu9ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();}
-else if(e.keyCode=='39'&&SS.InfoBox!=1&&SS.SubMenu==9&&SS.ItemNum-1>=SM8total&&SS.ItemNum<SM9total){SS.SubMenu9ItemPos=parseInt(SS.SubMenu9ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();}}
+Loader.innerHTML='<object type="text/html" data="files/exploit.html" style="width:265px; height:56px;"></object>';
+}
+if (UA == "5.05" || UA == "5.07"){HasHenRun = "no";}
+if (UA != "5.05" && UA != "5.07" && LS.AutoHEN == 'on'){AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = ON - Hen Has Loaded");}
+function LoadAutoHen(){
+if (window.applicationCache.status != '0' && HasHenRun == "no" && LS.AutoHEN == "on"){RunAutoHen();}
+}
+window.onload = LoadAutoHen
+
+// Detect Directional Button Presses Function
+window.onkeyup = checkKeyUp;
+function checkKeyUp(e){
+e=e || window.event;
+     if (e.keyCode=='117' && SS.Loaded==null) {HideInfo();} // **R1 BUTTON RELEASE**
+else if (e.keyCode=='118' && LS.AutoHEN=='on' && SS.ThisIsCredits != 1) {AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = OFF");LS.AutoHEN = "off";}// **L2 Set AutoHen - Off**
+else if (e.keyCode=='118' && LS.AutoHEN=='off' && SS.ThisIsCredits != 1) {AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = ON");LS.AutoHEN = "on";}// **L2 Set AutoHen - On**
+}
+
+window.onkeydown = checkKeyDown;
+function checkKeyDown(e){
+e=e || window.event;
+var MoveMenu = 164;
+     if (e.keyCode=='27' && SS.ThisIsCredits == 1) {SS.InfoBox=0;SS.removeItem('LastPage');SS.ThisIsCredits=0;window.location.reload();}
+else if (e.keyCode=='117' && SS.Loaded==null) {ShowInfo();} // **R1 BUTTON PRESS**
+else if (SS.ThisIsFanControl != null || SS.ThisIsFwSpoofer != null || SS.ThisIsReactMOD != null){} // Disable Menu Movement
+else if (e.keyCode=='38' && SS.InfoBox!=1 && SS.MainMenu == 0) {SS.MainMenu = 1; UNFocusSubMenu();} // All Sub Menus **UP BUTTON**
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+else if (e.keyCode=='37' && SS.InfoBox!=1 && SS.MainMenu == 1 && SS.ItemNum-1 >= 1 && SS.ItemNum <= MMtotal){
+SS.ItemPos=parseInt(SS.ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();}                 // Main Menu **LEFT BUTTON**
+
+else if (e.keyCode=='39' && SS.InfoBox!=1 && SS.MainMenu == 1 && SS.ItemNum-1 >= 0 && SS.ItemNum < MMtotal){
+SS.ItemPos=parseInt(SS.ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();}                 // Main Menu **RIGHT BUTTON**
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+else if (e.keyCode=='40' && SS.InfoBox!=1 && SS.ItemNum == SM1n) {
+SS.SubMenu = 1;SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu1ItemNum;FocusSubMenu1();UpdateSubMenu();}      // Sub Menu 1 **DOWN BUTTON**
+
+else if (e.keyCode=='37' && SS.InfoBox!=1 && SS.SubMenu == 1 && SS.ItemNum-1 > MMtotal && SS.ItemNum <= SM1total){
+SS.SubMenu1ItemPos=parseInt(SS.SubMenu1ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();} // Sub Menu 1 **LEFT BUTTON**
+
+else if (e.keyCode=='39' && SS.InfoBox!=1 && SS.SubMenu == 1 && SS.ItemNum-1 >= MMtotal && SS.ItemNum < SM1total){
+SS.SubMenu1ItemPos=parseInt(SS.SubMenu1ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();} // Sub Menu 1 **RIGHT BUTTON**
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+else if (e.keyCode=='40' && SS.InfoBox!=1 && SS.ItemNum == SM2n) {
+SS.SubMenu = 2;SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu2ItemNum;FocusSubMenu2();UpdateSubMenu();}      // Sub Menu 2 **DOWN BUTTON**
+
+else if (e.keyCode=='37' && SS.InfoBox!=1 && SS.SubMenu == 2 && SS.ItemNum-1 > SM1total && SS.ItemNum <= SM2total){
+SS.SubMenu2ItemPos=parseInt(SS.SubMenu2ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();} // Sub Menu 2 **LEFT BUTTON**
+
+else if (e.keyCode=='39' && SS.InfoBox!=1 && SS.SubMenu == 2 && SS.ItemNum-1 >= SM1total && SS.ItemNum < SM2total){
+SS.SubMenu2ItemPos=parseInt(SS.SubMenu2ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();} // Sub Menu 2 **RIGHT BUTTON**
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+else if (e.keyCode=='40' && SS.InfoBox!=1 && SS.ItemNum == SM3n) {
+SS.SubMenu = 3;SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu3ItemNum;FocusSubMenu3();UpdateSubMenu();}      // Sub Menu 3 **DOWN BUTTON**
+
+else if (e.keyCode=='37' && SS.InfoBox!=1 && SS.SubMenu == 3 && SS.ItemNum-1 > SM2total && SS.ItemNum <= SM3total){
+SS.SubMenu3ItemPos=parseInt(SS.SubMenu3ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();} // Sub Menu 3 **LEFT BUTTON**
+
+else if (e.keyCode=='39' && SS.InfoBox!=1 && SS.SubMenu == 3 && SS.ItemNum-1 >= SM2total && SS.ItemNum < SM3total){
+SS.SubMenu3ItemPos=parseInt(SS.SubMenu3ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();} // Sub Menu 3 **RIGHT BUTTON**
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+else if (e.keyCode=='40' && SS.InfoBox!=1 && SS.ItemNum == SM4n) {
+SS.SubMenu = 4;SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu4ItemNum;FocusSubMenu4();UpdateSubMenu();}      // Sub Menu 4 **DOWN BUTTON**
+
+else if (e.keyCode=='37' && SS.InfoBox!=1 && SS.SubMenu == 4 && SS.ItemNum-1 > SM3total && SS.ItemNum <= SM4total){
+SS.SubMenu4ItemPos=parseInt(SS.SubMenu4ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();} // Sub Menu 4 **LEFT BUTTON**
+
+else if (e.keyCode=='39' && SS.InfoBox!=1 && SS.SubMenu == 4 && SS.ItemNum-1 >= SM3total && SS.ItemNum < SM4total){
+SS.SubMenu4ItemPos=parseInt(SS.SubMenu4ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();} // Sub Menu 4 **RIGHT BUTTON**
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+else if (e.keyCode=='40' && SS.InfoBox!=1 && SS.ItemNum == SM5n) {
+SS.SubMenu = 5;SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu5ItemNum;FocusSubMenu5();UpdateSubMenu();}      // Sub Menu 5 **DOWN BUTTON**
+
+else if (e.keyCode=='37' && SS.InfoBox!=1 && SS.SubMenu == 5 && SS.ItemNum-1 > SM4total && SS.ItemNum <= SM5total){
+SS.SubMenu5ItemPos=parseInt(SS.SubMenu5ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();} // Sub Menu 5 **LEFT BUTTON**
+
+else if (e.keyCode=='39' && SS.InfoBox!=1 && SS.SubMenu == 5 && SS.ItemNum-1 >= SM4total && SS.ItemNum < SM5total){
+SS.SubMenu5ItemPos=parseInt(SS.SubMenu5ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();} // Sub Menu 5 **RIGHT BUTTON**
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+else if (e.keyCode=='40' && SS.InfoBox!=1 && SS.ItemNum == SM6n) {
+SS.SubMenu = 6;SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu6ItemNum;FocusSubMenu6();UpdateSubMenu();}      // Sub Menu 6 **DOWN BUTTON**
+
+else if (e.keyCode=='37' && SS.InfoBox!=1 && SS.SubMenu == 6 && SS.ItemNum-1 > SM5total && SS.ItemNum <= SM6total){
+SS.SubMenu6ItemPos=parseInt(SS.SubMenu6ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();} // Sub Menu 6 **LEFT BUTTON**
+
+else if (e.keyCode=='39' && SS.InfoBox!=1 && SS.SubMenu == 6 && SS.ItemNum-1 >= SM5total && SS.ItemNum < SM6total){
+SS.SubMenu6ItemPos=parseInt(SS.SubMenu6ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();} // Sub Menu 6 **RIGHT BUTTON**
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+else if (e.keyCode=='40' && SS.InfoBox!=1 && SS.ItemNum == SM7n) {
+SS.SubMenu = 7;SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu7ItemNum;FocusSubMenu7();UpdateSubMenu();}      // Sub Menu 7 **DOWN BUTTON**
+
+else if (e.keyCode=='37' && SS.InfoBox!=1 && SS.SubMenu == 7 && SS.ItemNum-1 > SM6total && SS.ItemNum <= SM7total){
+SS.SubMenu7ItemPos=parseInt(SS.SubMenu7ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();} // Sub Menu 7 **LEFT BUTTON**
+
+else if (e.keyCode=='39' && SS.InfoBox!=1 && SS.SubMenu == 7 && SS.ItemNum-1 >= SM6total && SS.ItemNum < SM7total){
+SS.SubMenu7ItemPos=parseInt(SS.SubMenu7ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();} // Sub Menu 7 **RIGHT BUTTON**
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+else if (e.keyCode=='40' && SS.InfoBox!=1 && SS.ItemNum == SM8n) {
+SS.SubMenu = 8;SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu8ItemNum;FocusSubMenu8();UpdateSubMenu();}      // Sub Menu 8 **DOWN BUTTON**
+
+else if (e.keyCode=='37' && SS.InfoBox!=1 && SS.SubMenu == 8 && SS.ItemNum-1 > SM7total && SS.ItemNum <= SM8total){
+SS.SubMenu8ItemPos=parseInt(SS.SubMenu8ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();} // Sub Menu 8 **LEFT BUTTON**
+
+else if (e.keyCode=='39' && SS.InfoBox!=1 && SS.SubMenu == 8 && SS.ItemNum-1 >= SM7total && SS.ItemNum < SM8total){
+SS.SubMenu8ItemPos=parseInt(SS.SubMenu8ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();} // Sub Menu 8 **RIGHT BUTTON**
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+else if (e.keyCode=='40' && SS.InfoBox!=1 && SS.ItemNum == SM9n) {
+SS.SubMenu = 9;SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu9ItemNum;FocusSubMenu9();UpdateSubMenu();}      // Sub Menu 9 **DOWN BUTTON**
+
+else if (e.keyCode=='37' && SS.InfoBox!=1 && SS.SubMenu == 9 && SS.ItemNum-1 > SM8total && SS.ItemNum <= SM9total){
+SS.SubMenu9ItemPos=parseInt(SS.SubMenu9ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();} // Sub Menu 9 **LEFT BUTTON**
+
+else if (e.keyCode=='39' && SS.InfoBox!=1 && SS.SubMenu == 9 && SS.ItemNum-1 >= SM8total && SS.ItemNum < SM9total){
+SS.SubMenu9ItemPos=parseInt(SS.SubMenu9ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();} // Sub Menu 9 **RIGHT BUTTON**
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+else if (e.keyCode=='40' && SS.InfoBox!=1 && SS.ItemNum == SM10n) {
+SS.SubMenu = 10;SS.MainMenu = 0;SS.ItemNum = SS.LastSubMenu10ItemNum;FocusSubMenu10();UpdateSubMenu();}      // Sub Menu 10 **DOWN BUTTON**
+
+else if (e.keyCode=='37' && SS.InfoBox!=1 && SS.SubMenu == 10 && SS.ItemNum-1 > SM9total && SS.ItemNum <= SM10total){
+SS.SubMenu10ItemPos=parseInt(SS.SubMenu10ItemPos)+MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)-1;UpdateMenu();} // Sub Menu 10 **LEFT BUTTON**
+
+else if (e.keyCode=='39' && SS.InfoBox!=1 && SS.SubMenu == 10 && SS.ItemNum-1 >= SM9total && SS.ItemNum < SM10total){
+SS.SubMenu10ItemPos=parseInt(SS.SubMenu10ItemPos)-MoveMenu;SS.ItemNum=parseInt(SS.ItemNum)+1;UpdateMenu();} // Sub Menu 10 **RIGHT BUTTON**
+}
 </script>
 </body>
 </html>
